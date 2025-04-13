@@ -8,7 +8,7 @@ class MDBookSidebarScrollbox extends HTMLElement {
         super();
     }
     connectedCallback() {
-        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded "><a href="Introduction/index.html"><strong aria-hidden="true">1.</strong> 介绍</a></li><li class="chapter-item expanded "><a href="Buddhism/index.html"><strong aria-hidden="true">2.</strong> 佛</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Buddhism/JinGangJing.html"><strong aria-hidden="true">2.1.</strong> 金刚经</a></li></ol></li><li class="chapter-item expanded "><a href="Dao/index.html"><strong aria-hidden="true">3.</strong> 道</a></li></ol>';
+        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded "><a href="Introduction/index.html"><strong aria-hidden="true">1.</strong> 介绍</a></li><li class="chapter-item expanded "><a href="Buddhism/index.html"><strong aria-hidden="true">2.</strong> 佛</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Buddhism/JinGangJing.html"><strong aria-hidden="true">2.1.</strong> 金刚经</a></li></ol></li><li class="chapter-item expanded "><a href="Dao/index.html"><strong aria-hidden="true">3.</strong> 道</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Dao/DaoDeJing.html"><strong aria-hidden="true">3.1.</strong> 道德经</a></li></ol></li></ol>';
         // Set the current, active page, and reveal it if it's hidden
         let current_page = document.location.href.toString().split("#")[0];
         if (current_page.endsWith("/")) {
