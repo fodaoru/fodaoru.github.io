@@ -1,0 +1,6 @@
+[book]
+authors = ["meng.yan"]
+language = "en"
+multilingual = false
+src = "src"
+title = "FoDaoRu"
