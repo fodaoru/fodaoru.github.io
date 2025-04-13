@@ -1,30 +1,27 @@
-name: Deploy GitBook to GitHub Pages
+name: Deploy mdBook to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]  # 设置触发分支
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v1
         with:
-          node-version: '14'
+          mdbook-version: 'latest'
           
-      - name: Install GitBook
-        run: |
-          npm install -g gitbook-cli
-          gitbook install
-          
-      - name: Build GitBook
-        run: gitbook build
-        
+      - name: Build mdBook
+        run: mdbook build
+      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./docs  # mdBook默认输出目录
+          # 如果使用自定义域名，添加下面这行
+          # cname: yourdomain.com
