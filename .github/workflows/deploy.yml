@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs  # mdBook默认输出目录
+          github_token: ${{ secrets.TARGET_REPO_TOKEN }}
+          publish_dir: ./book  # mdBook默认输出目录
           # 如果使用自定义域名，添加下面这行
           # cname: yourdomain.com
