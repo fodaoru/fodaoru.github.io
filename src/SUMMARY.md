@@ -4,6 +4,7 @@
   - [金刚经](Buddhism/JinGangJing.md)
   - [四十二章经](Buddhism/FortyTwoSutra.md)
   - [楞严经](Buddhism/LengYanJing.md)
+  - [维摩诘经](Buddhism/WeiMoJie.md)
 - [道](Dao/README.md)
   - [道德经](Dao/DaoDeJing.md)
   - [庄子](Dao/ZhuangZi.md)
