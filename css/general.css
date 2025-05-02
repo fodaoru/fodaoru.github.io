@@ -18,6 +18,8 @@ body {
     margin: 0.3;
     font-size: 1.8rem;
     overflow-x: hidden;
+    letter-spacing: 0.1em;
+    line-height: 1.9em;
 }
 
 code {
@@ -87,7 +89,7 @@ h6:target::before {
     margin-right: auto;
     max-width: var(--content-max-width);
 }
-.content p { line-height: 1.45em; }
+.content p { line-height: 1.45em; margin-top: 0.3em; margin-bottom: 0.3em; }
 .content ol { line-height: 1.45em; }
 .content ul { line-height: 1.45em; }
 .content a { text-decoration: none; }
