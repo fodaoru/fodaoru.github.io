@@ -3,7 +3,7 @@
 - [佛](Buddhism/README.md)
   - [金刚经](Buddhism/JinGangJing.md)
   - [四十二章经](Buddhism/FortyTwoSutra.md)
-  - [楞严经](Buddhism/LengYanJing/Original.md)
+  - [楞严经](Buddhism/LengYanJing/README.md)
     - [核心内容](Buddhism/LengYanJing/Core.md)
   - [维摩诘经](Buddhism/WeiMoJie/README.md)
     - [核心内容](Buddhism/WeiMoJie/Core.md)
