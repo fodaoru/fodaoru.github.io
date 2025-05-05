@@ -4,3 +4,6 @@ language = "zh-cn"
 multilingual = false
 src = "src"
 title = "佛、道、儒"
+
+[output.html]
+preferred-path-style = "absolute"
