@@ -5,6 +5,3 @@ multilingual = false
 src = "src"
 title = "佛、道、儒"
 
-[output.html]
-site-url = "https://fodaoru.github.io/"
-preferred-path-style = "absolute"
