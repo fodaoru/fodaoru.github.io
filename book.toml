@@ -5,3 +5,5 @@ multilingual = false
 src = "src"
 title = "佛、道、儒"
 
+[output.html]
+additional-css = ["theme/custom.css"]  # 额外 CSS
