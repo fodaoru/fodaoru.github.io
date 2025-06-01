@@ -7,3 +7,9 @@ title = "佛、道、儒"
 
 [output.html]
 additional-css = ["theme/custom.css"]  # 额外 CSS
+
+[output.html.print]
+enable = false
+
+[output.html.search]
+enable = false
