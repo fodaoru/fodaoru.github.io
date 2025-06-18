@@ -2,6 +2,7 @@
 
 * [佛](Buddhism/README.md)
   * [金刚经](Buddhism/JinGangJing.md)
+  * [心经](Buddhism/XinJing.md)
   * [四十二章经](Buddhism/FortyTwoSutra.md)
   * [坛经](Buddhism/TanJing.md)
   * [圆觉经](Buddhism/YuanJueJing.md)
