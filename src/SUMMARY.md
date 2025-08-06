@@ -10,6 +10,8 @@
     * [核心内容](Buddhism/LengYanJing/Core.md)
   * [维摩诘经](Buddhism/WeiMoJie/README.md)
     * [核心内容](Buddhism/WeiMoJie/Core.md)
+  * [楞伽经](Buddhism/LengQieJing/README.md)
+  * [阿含经](Buddhism/AHanJing/README.md)
   * [论](Buddhism/Lun/README.md)
     * [证道歌](Buddhism/Lun/ZhengDaoGe.md)
     * [童蒙止观](Buddhism/Lun/TongMengZhiGuan.md)

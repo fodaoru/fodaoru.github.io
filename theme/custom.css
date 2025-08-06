@@ -14,3 +14,7 @@ u {
     text-decoration-color: #5eacf0;
     text-decoration-style: wavy;
 }
+
+.small-text {
+  font-size: 1em;
+}
