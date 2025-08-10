@@ -1,5 +1,6 @@
 # Summary
 
+* [目录](README.md)
 * [佛](Buddhism/README.md)
   * [金刚经](Buddhism/JinGangJing.md)
   * [心经](Buddhism/XinJing.md)
@@ -23,3 +24,4 @@
   * [太乙金华宗旨](Dao/TaiYiJinHuaZongZhi.md)
 * [儒](Ru/README.md)
   * [传习录](Ru/ChuanXiLu.md)
+* [三合一](Merge/README.md)
