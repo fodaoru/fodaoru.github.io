@@ -16,6 +16,7 @@
   * [论](Buddhism/Lun/README.md)
     * [证道歌](Buddhism/Lun/ZhengDaoGe.md)
     * [达摩破相论](Buddhism/Lun/DaMoPoXiang.md)
+    * [清静道论](Buddhism/Lun/QingJingDao.md)
     * [大智度论](Buddhism/Lun/DaZhiDu.md)
     * [瑜伽师地论](Buddhism/Lun/YuQieShiDi.md)
     * [入菩萨行论](Buddhism/Lun/RuPuShaXing.md)
