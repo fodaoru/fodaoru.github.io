@@ -7,6 +7,7 @@ title = "佛、道、儒"
 
 [output.html]
 additional-css = ["theme/custom.css"]  # 额外 CSS
+mathjax-support = true
 
 [output.html.print]
 enable = false

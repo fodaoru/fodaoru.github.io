@@ -13,6 +13,7 @@
     * [核心内容](Buddhism/WeiMoJie/Core.md)
   * [楞伽经](Buddhism/LengQieJing/README.md)
   * [阿含经](Buddhism/AHanJing/README.md)
+  * [转法轮经](Buddhism/ZhuanFaLun.md)
   * [论](Buddhism/Lun/README.md)
     * [证道歌](Buddhism/Lun/ZhengDaoGe.md)
     * [达摩破相论](Buddhism/Lun/DaMoPoXiang.md)
