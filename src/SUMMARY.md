@@ -30,6 +30,7 @@
     * [帛书版](Dao/DaoDeJing/BoShu.md)
   * [庄子](Dao/ZhuangZi/README.md)
     * [核心思想](Dao/ZhuangZi/Core.md)
+    * [解释](Dao/ZhuangZi/Explanation.md)
   * [太乙金华宗旨](Dao/TaiYiJinHuaZongZhi.md)
 * [儒](Ru/README.md)
   * [传习录](Ru/ChuanXiLu.md)
