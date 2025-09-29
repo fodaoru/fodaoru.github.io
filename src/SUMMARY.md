@@ -24,6 +24,7 @@
     * [大乘起信论](Buddhism/Lun/DaChengQiXin.md)
     * [阿毗达磨俱舍论](Buddhism/Lun/JuShe.md)
     * [童蒙止观](Buddhism/Lun/TongMengZhiGuan.md)
+    * [华严金师子章](Buddhism/Lun/JinShiZi.md)
 * [道](Dao/README.md)
   * [道德经](Dao/DaoDeJing/README.md)
     * [解释](Dao/DaoDeJing/Explanation.md)
