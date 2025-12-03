@@ -12,35 +12,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../../favicon.svg">
-        <link rel="shortcut icon" href="../../favicon.png">
-        <link rel="stylesheet" href="../../css/variables.css">
-        <link rel="stylesheet" href="../../css/general.css">
-        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="icon" href="../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../css/general-2459343d.css">
+        <link rel="stylesheet" href="../../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../../css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <link rel="stylesheet" href="../../fonts/fonts-9644e21d.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../../theme/custom.css">
 
-        <!-- MathJax -->
-        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
         <!-- Provide site root and default themes to javascript -->
         <script>
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../../searchindex-99ff8d4a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc.js"></script>
+        <script src="../../toc-0dd3b26b.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -48,12 +46,13 @@
             <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
             <div>
                 <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
                 <p>Press <kbd>?</kbd> to show this help</p>
                 <p>Press <kbd>Esc</kbd> to hide this help</p>
             </div>
         </div>
     </div>
-    <div id="body-container">
+    <div id="mdbook-body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -82,12 +81,12 @@
             html.classList.add("js");
         </script>
 
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             let sidebar = null;
-            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -102,60 +101,86 @@
             }
         </script>
 
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
                 <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
             </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <div id="page-wrapper" class="page-wrapper">
+        <div id="mdbook-page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
                         </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
                         </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
                     </div>
 
                     <h1 class="menu-title">佛、道、儒</h1>
 
                     <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
 
                     </div>
                 </div>
 
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
 
-                <div id="content" class="content">
+                <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="楞严经"><a class="header" href="#楞严经">楞严经</a></h1>
 <h3 id="指示真心"><a class="header" href="#指示真心">指示真心</a></h3>
+<h4 id="迷之根本"><a class="header" href="#迷之根本">迷之根本</a></h4>
+<blockquote>
+<p>一切众生从无始来，生死相续，皆由不知常住真心、性净明体。用诸妄想，此想不真，故有轮转。</p>
+</blockquote>
+<p>    </p>
 <h4 id="妄心非真心"><a class="header" href="#妄心非真心">妄心非真心</a></h4>
 <blockquote>
 <p>若离前尘有分别性，即真汝心。若分别性离尘无体，斯则前尘分别影事。尘非常住，若变灭时，此心则同龟毛、兔角。</p>
@@ -169,7 +194,7 @@
 <blockquote>
 <p>若复众生，以摇动者名之为‘尘’，以不住者名之为‘客’。汝观阿难，头自动摇，见无所动；又汝观我，手自开合，见无舒卷。云何汝今以动为身，以动为境，从始洎终，念念生灭，遗失真性，颠倒行事；性心失真，认物为己，轮回是中，自取流转。</p>
 </blockquote>
-<p>摇动不止，且不常住的则为”客尘“，而有为法、妄念皆为客尘。而我们都为客尘所误，背觉合尘，流转生死。</p>
+<p>摇动不止，且不常住的则为”客尘“，而有为法、妄念皆为客尘。而我们都为客尘所误，背觉合尘，流转生死。(变动中的不变，即为真性)</p>
 <p>    </p>
 <h4 id="指示见性"><a class="header" href="#指示见性">指示”见性“</a></h4>
 <blockquote>
@@ -181,10 +206,18 @@
 </blockquote>
 <p>一切有为法皆变动不息，且都有所待。在纷繁复杂、变动不息之中，不变的那个是什么？</p>
 <p>    </p>
+<h3 id="无生法忍"><a class="header" href="#无生法忍">无生法忍</a></h3>
+<blockquote>
+<p>见闻觉知，虚妄病缘，和合妄生，和合妄死。若能远离诸和合缘及不和合，则复灭除诸生死因，圆满菩提不生灭性，清净本心，本觉常住。</p>
+</blockquote>
+<p>    </p>
 <h3 id="世间法"><a class="header" href="#世间法">世间法</a></h3>
 <h4 id="万法唯心"><a class="header" href="#万法唯心">万法唯心</a></h4>
 <blockquote>
 <p>诸善男子，我常说言，色心诸缘及心所使，诸所缘法，唯心所现。汝身汝心，皆是妙明真精，妙心中所现物。云何汝等遗失本妙、圆妙明心，宝明妙性，认悟中迷！晦昧为空，空晦暗中，结暗为色，色杂妄想，想相为身。聚缘内摇，趣外奔逸，昏扰扰相，以为心性。一迷为心，决定惑为色身之内。不知色身，外洎山河虚空大地，咸是妙明真心中物。譬如澄清百千大海，弃之，唯认一浮沤体。</p>
+</blockquote>
+<blockquote>
+<p>见与见缘并所想相，如虚空华本无所有。</p>
 </blockquote>
 <p>    </p>
 <h4 id="别业--同分妄见"><a class="header" href="#别业--同分妄见">别业 / 同分妄见</a></h4>
@@ -198,66 +231,103 @@
 <p><strong>同分妄见</strong>：一部分所造共业，导致业果对一批人的显现。国运、天灾，皆是共业。</p>
 <p>    </p>
 <h4 id="五阴虚妄"><a class="header" href="#五阴虚妄">五阴虚妄</a></h4>
-<div class="table-wrapper"><table><thead><tr><th>分类</th><th>说明</th></tr></thead><tbody>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>分类</th><th>说明</th></tr>
+</thead>
+<tbody>
 <tr><td>色阴虚妄</td><td>其人无故不动目睛，瞪以发劳，则于虚空别见狂花，复有一切狂乱非相。色阴当知，亦复如是。是诸狂花，非从空来，非从目出。</td></tr>
 <tr><td>受阴虚妄</td><td>其人无故，以二手掌于空相摩，于二手中，妄生涩滑、冷热诸相。受阴当知，亦复如是。是诸幻触，不从空来，不从掌出。</td></tr>
 <tr><td>想阴虚妄</td><td>譬如有人，谈说酢梅，口中水出；想阴当知，亦复如是。如是酢说，不从梅生，非从口入。</td></tr>
 <tr><td>行阴虚妄</td><td>譬如暴流，波浪相续，前际后际，不相逾越。行阴当知，亦复如是。如是流性，不因空生，不因水有，亦非水性，非离空、水。</td></tr>
 <tr><td>识阴虚妄</td><td>譬如有人取频伽瓶，塞其两孔，满中擎空，千里远行，用饷他国。识阴当知，亦复如是。如是虚空非彼方来，非此方入。</td></tr>
-</tbody></table>
+</tbody>
+</table>
 </div>
 <p>    </p>
 <h4 id="六入虚妄"><a class="header" href="#六入虚妄">六入虚妄</a></h4>
-<div class="table-wrapper"><table><thead><tr><th>分类</th><th>说明</th></tr></thead><tbody>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>分类</th><th>说明</th></tr>
+</thead>
+<tbody>
 <tr><td>眼入虚妄</td><td>因于明、暗二种妄尘，发见居中，吸此尘象，名为见性。此见离彼明暗二尘，毕竟无体。当知是见，非明、暗来，非于根出，不于空生。</td></tr>
 <tr><td>耳入虚妄</td><td>因于动、静二种妄尘，发闻居中，吸此尘象，名听闻性。此闻离彼动、静二尘，毕竟无体。当知是闻，非动、静来，非于根出，不于空生。</td></tr>
 <tr><td>鼻入虚妄</td><td>因于通、塞二种妄尘，发闻居中，吸此尘象，名嗅闻性。此闻离彼通、塞二尘，毕竟无体。当知是闻，非通、塞来，非于根出，不于空生。</td></tr>
 <tr><td>舌入虚妄</td><td>因甜苦、淡，二种妄尘，发知居中，吸此尘象，名知味性。此知味性，离彼甜苦及淡二尘，毕竟无体。当知如是，尝苦淡知，非甜苦来，非因淡有，又非根出，不于空生。</td></tr>
 <tr><td>身入虚妄</td><td>因于离、合二种妄尘，发觉居中，吸此尘象，名知觉性。此知觉体，离彼离合、违顺二尘，毕竟无体。当知是觉，非离合来，非违顺有，不于根出，又非空生。</td></tr>
 <tr><td>意入虚妄</td><td>因于生、灭二种妄尘，集知居中，吸撮内尘，见闻逆流，流不及地，名觉知性。此觉知性离彼寤寐、生灭二尘，毕竟无体。当知如是觉知之根，非寤寐来，非生灭有，不于根出，亦非空生。</td></tr>
-</tbody></table>
+</tbody>
+</table>
 </div>
 <p>    </p>
 <h4 id="十二处虚妄"><a class="header" href="#十二处虚妄">十二处虚妄</a></h4>
-<div class="table-wrapper"><table><thead><tr><th>分类</th><th>说明</th></tr></thead><tbody>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>分类</th><th>说明</th></tr>
+</thead>
+<tbody>
 <tr><td>色与见</td><td>观此祇陀树林及诸泉池，为是色生眼见？眼生色相？若复眼根生色相者，见空非色，色性应销，销则显发一切都无；色相既无，谁明空质？空亦如是。若复色尘生眼见者，观空非色，见即销亡，亡则都无，谁明空色？是故当知，见与色空，俱无处所。</td></tr>
 <tr><td>听与声</td><td>听与音声，俱无处所。</td></tr>
-<tr><td>嗅与香</td><td></td></tr>
-<tr><td>尝与味</td><td></td></tr>
-<tr><td>身与触</td><td></td></tr>
-<tr><td>意与法</td><td></td></tr>
-</tbody></table>
+<tr><td>嗅与香</td><td>香、鼻与闻，俱无处所。</td></tr>
+<tr><td>尝与味</td><td>味、舌与尝，俱无处所。</td></tr>
+<tr><td>身与触</td><td>觉、触与身，俱无处所。</td></tr>
+<tr><td>意与法</td><td>法则与心，俱无处所。</td></tr>
+</tbody>
+</table>
 </div>
 <p>    </p>
-<h3 id="无生法忍"><a class="header" href="#无生法忍">无生法忍</a></h3>
-<blockquote>
-<p>见闻觉知，虚妄病缘，和合妄生，和合妄死。若能远离诸和合缘及不和合，则复灭除诸生死因，圆满菩提不生灭性，清净本心，本觉常住。</p>
-</blockquote>
+<h4 id="十八界虚妄"><a class="header" href="#十八界虚妄">十八界虚妄</a></h4>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>分类</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>眼、色、眼识</td><td>眼、色为缘生眼识界，三处都无。</td></tr>
+<tr><td>耳、声、耳识</td><td>耳、声为缘生耳识界，三处都无。</td></tr>
+<tr><td>鼻、香、鼻识</td><td>鼻、香为缘生鼻识界，三处都无。</td></tr>
+<tr><td>舌、味、舌识</td><td>舌、味为缘生舌识界，三处都无。</td></tr>
+<tr><td>身、触、身识</td><td>身、触为缘生身识界，三处都无。</td></tr>
+<tr><td>意、法、意识</td><td>意、法为缘生意识界，三处都无。</td></tr>
+</tbody>
+</table>
+</div>
 <p>    </p>
 <h3 id="修行五十阴魔"><a class="header" href="#修行五十阴魔">修行五十阴魔</a></h3>
-<div class="table-wrapper"><table><thead><tr><th>分类</th><th>错误知见</th><th>说明</th><th>后果</th></tr></thead><tbody>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>分类</th><th>错误知见</th><th>说明</th><th>后果</th></tr>
+</thead>
+<tbody>
 <tr><td>色</td><td></td><td></td><td></td></tr>
 <tr><td>受</td><td></td><td></td><td></td></tr>
 <tr><td>想</td><td></td><td></td><td></td></tr>
-<tr><td>行</td><td>立无因论</td><td>穷生类本。于本类中生元露者，观彼幽清圆扰动元。于圆元中起计度者，是人坠入二无因论。<br/>1. 见本无因：见八万劫所有众生，业流湾环，死此生彼。只见众生轮回其处，八万劫外冥无所观，便作是解<br/>2. 见末无因：知人生人，悟鸟生鸟，从八万劫无复改移</td><td></td></tr>
+<tr><td>行</td><td>立无因论</td><td>穷生类本。于本类中生元露者，观彼幽清圆扰动元。于圆元中起计度者，是人坠入二无因论。<br />1. 见本无因：见八万劫所有众生，业流湾环，死此生彼。只见众生轮回其处，八万劫外冥无所观，便作是解<br />2. 见末无因：知人生人，悟鸟生鸟，从八万劫无复改移</td><td></td></tr>
 <tr><td></td><td>立圆常论</td><td>穷生类本，观彼幽清常扰动元，于圆常中起计度者，是人坠入四遍常论</td><td></td></tr>
 <tr><td></td><td>一分常论</td><td></td><td></td></tr>
 <tr><td>识</td><td></td><td></td><td></td></tr>
 <tr><td></td><td>发邪思因，立炽尘果</td><td>观命互通，却留尘劳，恐其销尽，便于此际坐莲华宫广化七珍，多增宝媛恣纵其心，生胜解者，是人则堕真无真执</td><td>生天魔种</td></tr>
 <tr><td></td><td>圆精应心，成趣寂果</td><td>于命明中分别精粗，疏决真伪，因果相酬，唯求感应。背清净道，所谓见苦、断集、证灭、修道。居灭已休，更不前进，生胜解者，是人则堕定性声闻</td><td>生缠空种</td></tr>
 <tr><td></td><td>圆觉㳷心，成湛明果</td><td>若于圆融清净觉明发研深妙，即立涅槃而不前进，生胜解者，是人则堕定性辟支</td><td>生觉圆明不化圆种</td></tr>
-</tbody></table>
+</tbody>
+</table>
 </div>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                             <a rel="prev" href="../../Buddhism/LengYanJing/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
                             <a rel="next prefetch" href="../../Buddhism/WeiMoJie/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
                         <div style="clear: both"></div>
@@ -267,16 +337,21 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a rel="prev" href="../../Buddhism/LengYanJing/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
                     <a rel="next prefetch" href="../../Buddhism/WeiMoJie/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
 
         </div>
 
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
 
 
@@ -285,10 +360,13 @@
         </script>
 
 
+        <script src="../../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../../mark-09e88c2c.min.js"></script>
+        <script src="../../searcher-c2a407aa.js"></script>
 
-        <script src="../../clipboard.min.js"></script>
-        <script src="../../highlight.js"></script>
-        <script src="../../book.js"></script>
+        <script src="../../clipboard-1626706a.min.js"></script>
+        <script src="../../highlight-abc7f01d.js"></script>
+        <script src="../../book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
 

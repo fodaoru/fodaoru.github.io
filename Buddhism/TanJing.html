@@ -12,35 +12,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../favicon.svg">
-        <link rel="shortcut icon" href="../favicon.png">
-        <link rel="stylesheet" href="../css/variables.css">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../theme/custom.css">
 
-        <!-- MathJax -->
-        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
         <!-- Provide site root and default themes to javascript -->
         <script>
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-99ff8d4a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc.js"></script>
+        <script src="../toc-0dd3b26b.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -48,12 +46,13 @@
             <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
             <div>
                 <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
                 <p>Press <kbd>?</kbd> to show this help</p>
                 <p>Press <kbd>Esc</kbd> to hide this help</p>
             </div>
         </div>
     </div>
-    <div id="body-container">
+    <div id="mdbook-body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -82,12 +81,12 @@
             html.classList.add("js");
         </script>
 
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             let sidebar = null;
-            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -102,60 +101,81 @@
             }
         </script>
 
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
                 <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
             </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <div id="page-wrapper" class="page-wrapper">
+        <div id="mdbook-page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
                         </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
                         </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
                     </div>
 
                     <h1 class="menu-title">佛、道、儒</h1>
 
                     <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
 
                     </div>
                 </div>
 
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
 
-                <div id="content" class="content">
+                <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="坛经"><a class="header" href="#坛经">坛经</a></h1>
-<p><a href="#%E8%A1%8C%E7%94%B1%E5%93%81%E7%AC%AC%E4%B8%80">行由品第一</a> <a href="#%E8%88%AC%E8%8B%A5%E5%93%81%E7%AC%AC%E4%BA%8C">般若品第二</a> <a href="#%E7%96%91%E9%97%AE%E5%93%81%E7%AC%AC%E4%B8%89">疑问品第三</a> <a href="#%E5%AE%9A%E6%85%A7%E5%93%81%E7%AC%AC%E5%9B%9B">定慧品第四</a> <a href="#%E5%9D%90%E7%A6%85%E5%93%81%E7%AC%AC%E4%BA%94">坐禅品第五</a> <a href="#%E5%BF%8F%E6%82%94%E5%93%81%E7%AC%AC%E5%85%AD">忏悔品第六</a> <a href="#%E6%9C%BA%E7%BC%98%E5%93%81%E7%AC%AC%E4%B8%83">机缘品第七</a> <a href="#%E6%B8%90%E9%A1%BF%E5%93%81%E7%AC%AC%E5%85%AB">渐顿品第八</a> <a href="#%E6%8A%A4%E6%B3%95%E5%93%81%E7%AC%AC%E4%B9%9D">护法品第九</a> <a href="#%E4%BB%98%E5%98%B1%E5%93%81%E7%AC%AC%E5%8D%81">付嘱品第十</a></p>
+<p><a href="#行由品第一">行由品第一</a> <a href="#般若品第二">般若品第二</a> <a href="#疑问品第三">疑问品第三</a> <a href="#定慧品第四">定慧品第四</a> <a href="#坐禅品第五">坐禅品第五</a> <a href="#忏悔品第六">忏悔品第六</a> <a href="#机缘品第七">机缘品第七</a> <a href="#渐顿品第八">渐顿品第八</a> <a href="#护法品第九">护法品第九</a> <a href="#付嘱品第十">付嘱品第十</a></p>
 <h3 id="行由品第一"><a class="header" href="#行由品第一">行由品第一</a></h3>
 <p>时，大师至宝林，韶州韦刺史与官僚入山，请师出。于城中大梵寺讲堂，为众开缘说法。师升座次，刺史官僚三十余人、儒宗学士三十余人、僧尼道俗一千余人，同时作礼，愿闻法要。</p>
 <p>大师告众曰：善知识，菩提自性，本来清净，但用此心，直了成佛。善知识，且听惠能行由得法事意。</p>
@@ -270,7 +290,7 @@
 <p>惠能于东山得法，辛苦受尽，命似悬丝。今日得与使君、官僚、僧尼、道俗同此一会，莫非累劫之缘，亦是过去生中供养诸佛，同种善根，方始得闻如上顿教、得法之因。教是先圣所传，不是惠能自智。愿闻先圣教者，各令净心，闻了各自除疑，如先代圣人无别。</p>
 <p>一众闻法，欢喜作礼而退。</p>
 <p>    </p>
-<hr />
+<hr>
 <h3 id="般若品第二"><a class="header" href="#般若品第二">般若品第二</a></h3>
 <p>次日，韦使君请益，师升座，告大众曰：总净心念摩诃般若波罗密多。复云：善知识！菩提般若之智，世人本自有之，只缘心迷，不能自悟，须假大善知识，示导见性。当知愚人智人，佛性本无差别，只缘迷悟不同，所以有愚有智。吾今为说摩诃般若波罗密法，使汝等各得智慧，志心谛听，吾为汝说。</p>
 <p>善知识！<u>世人终日口念般若，不识自性般若，犹如说食不饱</u>。口但说空，万劫不得见性，终无有益。</p>
@@ -339,7 +359,7 @@
 <p>    </p>
 <p>师复曰：今于大梵寺说此顿教，普愿法界众生言下见性成佛。时韦使君与官僚、道俗闻师所说，无不省悟。一时作礼，皆叹：善哉！何期岭南有佛出世！</p>
 <p>    </p>
-<hr />
+<hr>
 <h3 id="疑问品第三"><a class="header" href="#疑问品第三">疑问品第三</a></h3>
 <p>一日，韦刺史为师设大会斋。斋讫，刺史请师升座，同官僚士庶肃容再拜，问曰：弟子闻和尚说法，实不可思议。今有少疑，愿大慈悲，特为解说。</p>
 <p>师曰：有疑即问，吾当为说。</p>
@@ -381,7 +401,7 @@
 <p>师复曰：善知识！总须依偈修行，见取自性，直成佛道。时不相待，众人且散，吾归曹溪。众若有疑，却来相问。</p>
 <p>时，刺史、官僚、在会善男信女，各得开悟，信受奉行。</p>
 <p>    </p>
-<hr />
+<hr>
 <h3 id="定慧品第四"><a class="header" href="#定慧品第四">定慧品第四</a></h3>
 <p>师示众云：善知识！我此法门，以定慧为本。大众勿迷，言定慧别，定慧一体，不是二。<u>定是慧体，慧是定用</u>，即慧之时定在慧，即定之时慧在定。若识此义，即是定慧等学。诸学道人，莫言先定发慧、先慧发定各别。作此见者，法有二相。口说善语，心中不善，空有定慧，定慧不等。若心口俱善，内外一如，定慧即等。自悟修行，不在于诤；若诤先后，即同迷人。不断胜负，却增我法，不离四相。</p>
 <p>善知识！定慧犹如何等？犹如灯光。有灯即光，无灯即暗，灯是光之体，光是灯之用。名虽有二，体本同一。此定慧法，亦复如是。</p>
@@ -397,7 +417,7 @@
 <p>善知识！无者，无何事？念者，念何物？无者，无二相，无诸尘劳之心。念者，念真如本性，真如即是念之体，念即是真如之用。真如自性起念，非眼耳鼻舌能念。真如有性，所以起念。真如若无，眼耳色声当时即坏。</p>
 <p>善知识！真如自性起念，六根虽有见闻觉知，不染万境，而真性常自在。故经云：能善分别诸法相，于第一义而不动。</p>
 <p>    </p>
-<hr />
+<hr>
 <h3 id="坐禅品第五"><a class="header" href="#坐禅品第五">坐禅品第五</a></h3>
 <p>师示众云：此门坐禅，元不著心，亦不著净，亦不是不动。若言著心，心元是妄，知心如幻，故无所著也。若言著净，人性本净；由妄念故，盖覆真如，但无妄想，性自清净。起心著净，却生净妄，妄无处所，著者是妄。净无形相，却立净相。言是工夫，作此见者，障自本性，却被净缚。</p>
 <p>善知识！若修不动者，<u>但见一切人时，不见人之是非善恶过患，即是自性不动</u>。</p>
@@ -405,7 +425,7 @@
 <p>师示众云：善知识！何名坐禅？此法门中，无障无碍，<u>外于一切善恶境界，心念不起，名为坐；内见自性不动，名为禅</u>。善知识！何名禅定？<u>外离相为禅，内不乱为定</u>。外若著相，内心即乱。外若离相，心即不乱。本性自净自定，只为见境思境即乱。若见诸境心不乱者，是真定也。</p>
 <p>善知识！外离相即禅，内不乱即定。外禅内定，是为禅定。菩萨戒经云：我本元自性清净。善知识！于念念中，自见本性清净，自修、自行，自成佛道。</p>
 <p>    </p>
-<hr />
+<hr>
 <h3 id="忏悔品第六"><a class="header" href="#忏悔品第六">忏悔品第六</a></h3>
 <p>时，大师见广韶洎四方士庶，骈集山中听法，于是升座告众曰：来，诸善知识！此事须从自性中起。于一切时，念念自净其心，自修自行，见自己法身，见自心佛，自度自戒，始得不假到此。既从远来，一会于此，皆共有缘。今可各各胡跪，先为传自性五分法身香，次授无相忏悔。</p>
 <p>众胡跪。师曰：一戒香，即<u>自心中，无非、无恶、无嫉妒、无贪嗔、无劫害</u>，名戒香。二定香，即<u>睹诸善恶境相，自心不乱</u>，名定香。三慧香，自心无碍，常以智慧观照自性，不造诸恶。虽修众善，心不执著，敬上念下，矜恤孤贫，名慧香。四解脱香，即<u>自心无所攀缘，不思善，不思恶，自在无碍</u>，名解脱香。五解脱知见香，自心既无所攀缘善恶，不可沉空守寂，即须广学多闻，识自本心，达诸佛理，和光接物，无我无人，直至菩提，真性不易，名解脱知见香。</p>
@@ -452,7 +472,7 @@
 </blockquote>
 <p>师言：善知识！总须诵取，依此修行。言下见性，虽去吾千里，如常在吾边。于此言下不悟，即对面千里，何勤远来？珍重好去！一众闻法，靡不开悟，欢喜奉行。</p>
 <p>    </p>
-<hr />
+<hr>
 <h3 id="机缘品第七"><a class="header" href="#机缘品第七">机缘品第七</a></h3>
 <p>师自黄梅得法，回至韶州曹侯村，人无知者。有儒士刘志略，礼遇甚厚。志略有姑为尼，名无尽藏，常诵大涅槃经。师暂听，即知妙义，遂为解说。尼乃执卷问字。</p>
 <p>师曰：字即不识，义即请问。</p>
@@ -684,7 +704,7 @@
 <p>对境心数起，菩提作么长？</p>
 </blockquote>
 <p>    </p>
-<hr />
+<hr>
 <h3 id="渐顿品第八"><a class="header" href="#渐顿品第八">渐顿品第八</a></h3>
 <p>时，祖师居曹溪宝林，神秀大师在荆南玉泉寺。于时两宗盛化，人皆称南能北秀，故有南北二宗顿渐之分。而学者莫知宗趣。</p>
 <p>师谓众曰：法本一宗，人有南北；法即一种，见有迟疾。何名顿渐？法无顿渐，人有利钝，故名顿渐。</p>
@@ -776,7 +796,7 @@
 <p>师见诸宗难问，咸起恶心，多集座下，愍而谓曰：学道之人，一切善念恶念，应当尽除。无名可名，名于自性；无二之性，是名实性。于实性上建立一切教门，言下便须自见。</p>
 <p>诸人闻说，总皆作礼，请事为师。</p>
 <p>    </p>
-<hr />
+<hr>
 <h3 id="护法品第九"><a class="header" href="#护法品第九">护法品第九</a></h3>
 <p>神龙元年上元日，则天中宗诏云：朕请安秀二师，宫中供养。万机之暇，每究一乘。二师推让云：南方有能禅师，密授忍大师衣法，传佛心印，可请彼问。今遣内侍薛简，驰诏迎请，愿师慈念，速赴上京。</p>
 <p>师上表辞疾，愿终林麓。</p>
@@ -795,7 +815,7 @@
 <p>    </p>
 <p>其年九月三日，有诏奖谕师曰：师辞老疾，为朕修道，国之福田。师若净名，托疾毗耶，阐扬大乘，传诸佛心，谈不二法。薛简传师指授如来知见，朕积善余庆，宿种善根，值师出世，顿悟上乘，感荷师恩，顶戴无已。并奉磨衲袈裟，及水晶钵，敕韶州刺史修饰寺宇，赐师旧居为国恩寺。</p>
 <p>    </p>
-<hr />
+<hr>
 <h3 id="付嘱品第十"><a class="header" href="#付嘱品第十">付嘱品第十</a></h3>
 <p>师一日唤门人法海、志诚、法达、神会、智常、智通、志彻、志道、法珍、法如等，曰：汝等不同余人，吾灭度后，各为一方师。吾今教汝说法，不失本宗。</p>
 <p>先须举三科法门，动用三十六对，出没即离两边。说一切法，莫离自性。忽有人问汝法，出语尽双，皆取对法，来去相因。究竟二法尽除，更无去处。</p>
@@ -904,11 +924,11 @@
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                             <a rel="prev" href="../Buddhism/FortyTwoSutra.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
                             <a rel="next prefetch" href="../Buddhism/YuanJueJing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
                         <div style="clear: both"></div>
@@ -918,16 +938,21 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a rel="prev" href="../Buddhism/FortyTwoSutra.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
                     <a rel="next prefetch" href="../Buddhism/YuanJueJing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
 
         </div>
 
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
 
 
@@ -936,10 +961,13 @@
         </script>
 
 
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
 
-        <script src="../clipboard.min.js"></script>
-        <script src="../highlight.js"></script>
-        <script src="../book.js"></script>
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
 
