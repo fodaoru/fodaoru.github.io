@@ -6,11 +6,6 @@ title = "佛、道、儒"
 
 [output.html]
 additional-css = ["theme/custom.css"]  # 额外 CSS
-mathjax-support = true
-
-# 显示指定行内公式的分隔符
-[output.html.mathjax]
-inline = [['$', '$'], ['\\(', '\\)']]
 
 [output.html.print]
 enable = false
