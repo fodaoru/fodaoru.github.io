@@ -1,7 +1,6 @@
 [book]
 authors = ["meng.yan"]
 language = "zh-cn"
-multilingual = false
 src = "src"
 title = "佛、道、儒"
 
