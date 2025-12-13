@@ -33,6 +33,7 @@
     * [核心思想](Dao/ZhuangZi/Core.md)
     * [解释](Dao/ZhuangZi/Explanation.md)
     * [义理](Dao/ZhuangZi/YiLi.md)
+    * [义理详解](Dao/ZhuangZi/YiLiExplain.md)
     * [编排](Dao/ZhuangZi/Arrangement.md)
   * [太乙金华宗旨](Dao/TaiYiJinHuaZongZhi.md)
 * [儒](Ru/README.md)
