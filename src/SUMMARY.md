@@ -35,6 +35,7 @@
     * [义理](Dao/ZhuangZi/YiLi.md)
     * [义理详解](Dao/ZhuangZi/YiLiExplain.md)
     * [编排](Dao/ZhuangZi/Arrangement.md)
+  * [列子](Dao/LieZi/README.md)
   * [太上感应篇](Dao/TaiShangGanYing.md)
   * [太乙金华宗旨](Dao/TaiYiJinHuaZongZhi.md)
 * [儒](Ru/README.md)
