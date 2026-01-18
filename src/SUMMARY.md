@@ -38,6 +38,8 @@
   * [列子](Dao/LieZi/README.md)
   * [太上感应篇](Dao/TaiShangGanYing.md)
   * [太乙金华宗旨](Dao/TaiYiJinHuaZongZhi.md)
+  * [阴符经](Dao/YinFuJing.md)
+  * [清静经](Dao/QingJingJing.md)
 * [儒](Ru/README.md)
   * [传习录](Ru/ChuanXiLu.md)
 * [三合一](Merge/README.md)
