@@ -27,6 +27,7 @@
     * [童蒙止观](Buddhism/Lun/TongMengZhiGuan.md)
     * [华严金师子章](Buddhism/Lun/JinShiZi.md)
     * [肇论](Buddhism/Lun/ZhaoLun.md)
+    * [中论](Buddhism/Lun/ZhongLun.md)
 * [道](Dao/README.md)
   * [道德经](Dao/DaoDeJing/README.md)
     * [解释](Dao/DaoDeJing/Explanation.md)
