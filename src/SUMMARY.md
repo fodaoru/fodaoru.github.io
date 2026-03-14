@@ -13,6 +13,8 @@
     * [核心内容](Buddhism/WeiMoJie/Core.md)
   * [楞伽经](Buddhism/LengQieJing/README.md)
   * [阿含经](Buddhism/AHanJing/README.md)
+  * [大般涅槃经](Buddhism/DaBoNiePan.md)
+  * [观无量寿经](Buddhism/GuanWuLiangShou.md)
   * [其它佛经](Buddhism/Other/README.md)
     * [转法轮经](Buddhism/Other/ZhuanFaLun.md)
   * [论](Buddhism/Lun/README.md)
