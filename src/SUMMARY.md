@@ -14,6 +14,7 @@
   * [楞伽经](Buddhism/LengQieJing/README.md)
   * [华严经](Buddhism/HuaYan/README.md)
     * [卷一](Buddhism/HuaYan/J1.md)
+  * [解深密经](Buddhism/JieShenMiJing.md)
   * [阿含经](Buddhism/AHanJing/README.md)
   * [大般涅槃经](Buddhism/DaBoNiePan.md)
   * [观无量寿经](Buddhism/GuanWuLiangShou.md)
