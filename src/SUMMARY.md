@@ -42,6 +42,7 @@
     * [解释](Dao/DaoDeJing/Explanation.md)
     * [帛书版](Dao/DaoDeJing/BoShu.md)
     * [整理](Dao/DaoDeJing/Arrangement.md)
+    * [章节](Dao/DaoDeJing/Chapter.md)
   * [庄子](Dao/ZhuangZi/README.md)
     * [核心思想](Dao/ZhuangZi/Core.md)
     * [解释](Dao/ZhuangZi/Explanation.md)
