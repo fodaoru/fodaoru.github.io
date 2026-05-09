@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5f0e8" />
+      <stop offset="60%" stop-color="#efe9dd" />
+      <stop offset="100%" stop-color="#e8e0d0" />
+    </radialGradient>
+    <radialGradient id="neiGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(180,200,180,0.04)" />
+      <stop offset="70%" stop-color="rgba(160,185,160,0.10)" />
+      <stop offset="100%" stop-color="rgba(140,170,140,0.20)" />
+    </radialGradient>
+    <radialGradient id="cqGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(190,165,140,0.30)" />
+      <stop offset="100%" stop-color="rgba(160,135,110,0.45)" />
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.12)" />
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="900" height="900" fill="url(#bgGrad)" />
+
+  <!-- ===== 六合之外（无边界，即整张画面） ===== -->
+  <text x="450" y="55" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="28" fill="rgba(80,85,110,0.50)" letter-spacing="16">六 合 之 外</text>
+  <text x="450" y="85" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="14" fill="rgba(80,85,110,0.28)" letter-spacing="6">道 · 无何有之乡 · 自性</text>
+  <text x="450" y="110" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="12" fill="rgba(80,85,110,0.25)" letter-spacing="4">六合之外，圣人存而不论</text>
+
+  <!-- ===== 六合之内 圆（实线） ===== -->
+  <circle cx="450" cy="460" r="340" fill="url(#neiGrad)" stroke="rgba(80,120,90,0.65)" stroke-width="2.5" />
+  <circle cx="450" cy="460" r="335" fill="none" stroke="rgba(80,120,90,0.15)" stroke-width="0.5" />
+
+  <!-- 六合之内 标题 -->
+  <text x="450" y="225" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="22" fill="rgba(50,90,60,0.70)" letter-spacing="12">六 合 之 内</text>
+  <text x="450" y="278" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="11" fill="rgba(50,90,60,0.40)" letter-spacing="4">六合之内，圣人论而不议</text>
+
+  <!-- 云朵（替代飞鸟） -->
+  <g fill="rgba(160,180,195,0.35)" stroke="rgba(140,160,175,0.30)" stroke-width="0.8">
+    <path d="M270,245 Q278,232 290,238 Q298,225 310,233 Q318,222 328,230 Q320,248 308,250 Q298,255 285,252 Q275,255 270,245 Z" />
+    <path d="M580,268 Q586,258 595,262 Q602,250 612,256 Q618,246 626,254 Q620,268 610,270 Q602,274 592,270 Q584,274 580,268 Z" />
+    <path d="M310,220 Q316,212 324,216 Q330,206 338,212 Q344,204 352,210 Q346,222 338,224 Q330,226 322,224 Q314,226 310,220 Z" />
+    <path d="M600,248 Q606,240 614,244 Q620,232 628,238 Q634,228 642,234 Q636,246 628,248 Q620,250 612,248 Q604,252 600,248 Z" />
+  </g>
+
+  <!-- 远山 -->
+  <g fill="rgba(90,125,100,0.25)" stroke="none">
+    <path d="M180,520 Q200,460 230,490 Q260,440 290,480 Q320,450 350,490 Q370,470 400,510 L400,560 L180,560 Z" />
+    <path d="M490,500 Q520,440 550,480 Q580,420 620,480 Q650,450 680,500 Q710,470 740,520 L740,560 L490,560 Z" />
+  </g>
+
+  <!-- 近山 -->
+  <g fill="rgba(80,115,85,0.20)" stroke="none">
+    <path d="M175,570 Q205,520 235,550 Q260,530 280,560 L280,620 L175,620 Z" />
+    <path d="M610,560 Q640,510 670,540 Q695,520 720,560 L720,620 L610,620 Z" />
+  </g>
+
+  <!-- 水波 -->
+  <path d="M185,630 Q230,622 275,630 Q320,638 365,630 Q410,622 455,630 Q500,638 545,630 Q590,622 635,630 Q680,638 725,630" fill="none" stroke="rgba(100,140,160,0.30)" stroke-width="1" />
+  <path d="M185,642 Q230,634 275,642 Q320,650 365,642 Q410,634 455,642 Q500,650 545,642 Q590,634 635,642 Q680,650 725,642" fill="none" stroke="rgba(100,140,160,0.20)" stroke-width="0.8" />
+
+  <!-- 树 -->
+  <g stroke="rgba(60,100,60,0.45)" stroke-width="2" fill="none">
+    <line x1="330" y1="600" x2="330" y2="550" />
+    <circle cx="330" cy="538" r="15" fill="rgba(60,110,60,0.20)" stroke="none" />
+    <line x1="510" y1="590" x2="510" y2="540" />
+    <circle cx="510" cy="528" r="13" fill="rgba(60,110,60,0.20)" stroke="none" />
+  </g>
+
+  <!-- 六合之内底部引用 -->
+  <text x="450" y="685" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="12" fill="rgba(60,100,65,0.45)" letter-spacing="3">天地与我并生，万物与我为一</text>
+
+  <!-- ===== 春秋 圆（虚线） ===== -->
+  <circle cx="450" cy="460" r="160" fill="url(#cqGrad)" stroke="rgba(140,100,70,0.75)" stroke-width="2.5" stroke-dasharray="8,5" filter="url(#shadow)" />
+
+  <!-- 春秋 标题 -->
+  <text x="450" y="370" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="20" fill="rgba(120,85,55,0.85)" letter-spacing="8">春 秋 经 世</text>
+  <text x="450" y="392" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="12" fill="rgba(120,85,55,0.55)" letter-spacing="3">（ 社 会 ）</text>
+  <text x="450" y="415" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="10" fill="rgba(120,85,55,0.40)">议而不辩</text>
+
+  <!-- 房舍（中国古建筑样式） -->
+  <g fill="rgba(160,130,100,0.25)" stroke="rgba(120,85,55,0.60)" stroke-width="1.2">
+    <!-- 左屋 -->
+    <path d="M412,490 L412,472 L420,464 L428,472 L428,490 Z" />
+    <path d="M412,472 Q420,466 428,472" fill="rgba(160,130,100,0.35)" />
+    <rect x="416" y="480" width="4" height="10" fill="rgba(120,85,55,0.30)" stroke="none" />
+    <rect x="423" y="480" width="4" height="10" fill="rgba(120,85,55,0.30)" stroke="none" />
+    <!-- 右屋 -->
+    <path d="M468,490 L468,474 L475,467 L482,474 L482,490 Z" />
+    <path d="M468,474 Q475,468 482,474" fill="rgba(160,130,100,0.35)" />
+    <rect x="471" y="482" width="4" height="8" fill="rgba(120,85,55,0.30)" stroke="none" />
+    <rect x="477" y="482" width="4" height="8" fill="rgba(120,85,55,0.30)" stroke="none" />
+  </g>
+
+  <!-- 人（更清晰的古装人物） -->
+  <g stroke="rgba(120,85,55,0.55)" stroke-width="1.5" fill="none">
+    <!-- 左人 -->
+    <circle cx="438" cy="498" r="3.5" fill="rgba(120,85,55,0.45)" stroke="none" />
+    <line x1="438" y1="501" x2="438" y2="515" />
+    <line x1="438" y1="505" x2="430" y2="512" />
+    <line x1="438" y1="505" x2="446" y2="512" />
+    <line x1="438" y1="515" x2="432" y2="524" />
+    <line x1="438" y1="515" x2="444" y2="524" />
+    <!-- 右人 -->
+    <circle cx="455" cy="498" r="3.5" fill="rgba(120,85,55,0.45)" stroke="none" />
+    <line x1="455" y1="501" x2="455" y2="515" />
+    <line x1="455" y1="505" x2="447" y2="512" />
+    <line x1="455" y1="505" x2="463" y2="512" />
+    <line x1="455" y1="515" x2="449" y2="524" />
+    <line x1="455" y1="515" x2="461" y2="524" />
+  </g>
+
+  <!-- 小径 -->
+  <path d="M425,528 Q440,522 450,526 Q460,522 475,528" fill="none" stroke="rgba(140,100,70,0.30)" stroke-width="1" stroke-dasharray="3,2" />
+
+  <!-- 春秋 底部说明 -->
+  <text x="450" y="548" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="11" fill="rgba(120,85,55,0.50)">是非 · 名利 · 仁义 · 礼法</text>
+
+  <!-- 春秋 底部内圈线 -->
+  <path d="M385,555 Q450,565 515,555" fill="none" stroke="rgba(140,100,70,0.12)" stroke-width="0.5" />
+
+  <!-- ===== 上升路径标注 ===== -->
+
+  <!-- 春秋 → 六合之内 -->
+  <g fill="rgba(80,120,90,0.30)">
+    <text x="641" y="410" font-family="KaiTi, STKaiti, serif" font-size="11" fill="rgba(80,120,90,0.50)">物物而不物于物</text>
+  </g>
+  <g fill="rgba(80,120,90,0.30)">
+    <text x="165" y="410" font-family="KaiTi, STKaiti, serif" font-size="11" fill="rgba(80,120,90,0.50)">乘天地之正，御六气之辩</text>
+  </g>
+
+  <!-- 六合之内 → 六合之外 -->
+  <g fill="rgba(80,85,110,0.25)">
+    <text x="540" y="150" font-family="KaiTi, STKaiti, serif" font-size="10" fill="rgba(80,85,110,0.35)">堕肢体，黜聪明，离形去知</text>
+  </g>
+  <g fill="rgba(80,85,110,0.25)">
+    <text x="268" y="150" font-family="KaiTi, STKaiti, serif" font-size="10" fill="rgba(80,85,110,0.35)">独与天地精神往来</text>
+  </g>
+
+  <!-- ===== 底部标签 ===== -->
+  <text x="450" y="840" text-anchor="middle" font-family="KaiTi, STKaiti, serif" font-size="12" fill="rgba(80,85,110,0.30)" letter-spacing="4">道 · 无何有之乡 · 自性</text>
+
+
+</svg>
