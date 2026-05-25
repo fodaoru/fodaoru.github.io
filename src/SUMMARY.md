@@ -38,6 +38,7 @@
       * [中论·僧睿释](Buddhism/Lun/ZhongLun/ShengRui.md)
       * [核心义理](Buddhism/Lun/ZhongLun/Core.md)
     * [摄大乘论](Buddhism/Lun/SheDaCheng.md)
+    * [四念处](Buddhism/Lun/SiNianChu.md)
     * [概要](Buddhism/Lun/Summary/README.md)
       * [童蒙止观概要](Buddhism/Lun/Summary/TongMengZhiGuan.md)
 * [道](Dao/README.md)
