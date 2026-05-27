@@ -61,5 +61,6 @@
   * [阴符经](Dao/YinFuJing.md)
   * [清静经](Dao/QingJingJing.md)
 * [儒](Ru/README.md)
+  * [孟子](Ru/MengZi.md)
   * [传习录](Ru/ChuanXiLu.md)
 * [三合一](Merge/README.md)
