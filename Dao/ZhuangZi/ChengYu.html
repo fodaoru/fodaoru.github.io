@@ -1,0 +1,575 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>成语 - 佛、道、儒</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../../css/chrome-d279d366.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../theme/custom-f123a102.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc-1c170f1c.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">佛、道、儒</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="庄子成语"><a class="header" href="#庄子成语">《庄子》成语</a></h1>
+<h2 id="内篇"><a class="header" href="#内篇">内篇</a></h2>
+<ul>
+<li><strong>鹏程万里</strong>：鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里 ——《逍遥游》</li>
+<li><strong>扶摇直上</strong>：抟扶摇而上者九万里，去以六月息者也 ——《逍遥游》</li>
+<li><strong>越俎代庖</strong>：庖人虽不治庖，尸祝不越樽俎而代之矣 ——《逍遥游》</li>
+<li><strong>鹪鹩一枝</strong>：鹪鹩巢于深林，不过一枝；偃鼠饮河，不过满腹 ——《逍遥游》</li>
+<li><strong>偃鼠饮河</strong>：偃鼠饮河，不过满腹。 ——《逍遥游》</li>
+<li><strong>无何有之乡</strong>：何不树之于无何有之乡，广莫之野 ——《逍遥游》</li>
+<li><strong>跳梁小丑</strong>：子独不见狸牲乎，卑身而伏，以候敖者，东西跳梁，不避高下。 ——《逍遥游》</li>
+<li><strong>食不果腹</strong>：適莽苍者，三餐而反，腹犹果然。 ——《逍遥游》</li>
+<li><strong>河汉无极</strong>：吾闻言于接舆，大而无当，往而不返，吾惊怖其言，犹河汉无极。 ——《逍遥游》</li>
+<li><strong>风斯在下</strong>：风之积也不厚，则其负大翼也无力。故九万里，则风斯在下矣，而后乃今培风。 ——《逍遥游》</li>
+<li><strong>大而无当</strong>：大而无当，往而不反 ——《逍遥游》</li>
+<li><strong>大相径庭</strong>：大有径庭，不近人情焉 ——《逍遥游》</li>
+<li><strong>不近人情</strong>：大有径庭，不近人情焉。 ——《逍遥游》</li>
+<li><strong>椿萱并茂</strong>：上古有大椿者，以八千岁为春，八千岁为秋。 ——《逍遥游》</li>
+<li><strong>尘垢秕糠</strong>：是其尘垢粃糠，将犹陶铸尧舜者也。 ——《逍遥游》</li>
+<li><strong>材大难用</strong>：吾有大树，人谓之樗。其大本拥肿而不中绳墨，其小枝卷曲而不中规矩，立之涂，匠者不顾。今子之言，大而无用，众所同去也。 ——《逍遥游》</li>
+<li><strong>不知春秋</strong>：朝菌不知晦朔，蟪蛄不知春秋，此小年也。 ——《逍遥游》</li>
+<li><strong>姑射神人</strong>：藐姑射之山，有神人居焉，肌肤若冰雪，淖约若处子 ——《逍遥游》</li>
+<li><strong>吸风饮露</strong>：肌肤若冰雪，淖约若处子；不食五谷，吸风饮露 ——《逍遥游》</li>
+<li><strong>至人无己</strong>：至人无己，神人无功，圣人无名。 ——《逍遥游》</li>
+<li><strong>知效一官</strong>：故夫知效一官，行比一乡，德合一君，而征一国者，其自视也，亦若此矣。 ——《逍遥游》</li>
+<li><strong>榆枋之见</strong>：蜩与学鸠笑之曰：我决起而飞，抢榆枋，时则不至而控于地而已矣 ——《逍遥游》</li>
+<li><strong>野马尘埃</strong>：野马也，尘埃也。 ——《逍遥游》</li>
+<li><strong>嗒然若丧</strong>：仰天而嘘，嗒焉似丧其耦。 ——《齐物论》</li>
+<li><strong>心如死灰</strong>：形固可使如槁木，而心固可使如死灰乎 ——《齐物论》</li>
+<li><strong>庄周梦蝶</strong>：不知周之梦为胡蝶与，胡蝶之梦为周与 ——《齐物论》</li>
+<li><strong>栩栩如生</strong>：昔者庄周梦为胡蝶，栩栩然胡蝶也，自喻适志与 ——《齐物论》</li>
+<li><strong>沉鱼落雁</strong>：毛嫱、丽姬，人之所美也；鱼见之深入，鸟见之高飞，麋鹿见之决骤 ——《齐物论》</li>
+<li><strong>朝三暮四</strong>：狙公赋芧，曰：朝三而暮四。众狙皆怒 ——《齐物论》</li>
+<li><strong>见卵求鸡</strong>：女亦大早计，见卵而求时夜，见弹而求鸮炙。 ——《齐物论》</li>
+<li><strong>恢诡谲怪</strong>：恢诡谲怪，道通为一。 ——《齐物论》</li>
+<li><strong>姑妄言之，姑妄听之</strong>：予尝为女妄言之，女以妄听之。 ——《齐物论》</li>
+<li><strong>大辩不言</strong>：大辩不言，大仁不仁。 ——《齐物论》</li>
+<li><strong>大梦初醒</strong>：且有大觉，而后知此其大梦也。 ——《齐物论》</li>
+<li><strong>存而不论</strong>：六合之外，圣人存而不论；六合之内，圣人论而不议。 ——《齐物论》</li>
+<li><strong>鸱鸦嗜鼠</strong>：民食刍豢，麋鹿食荐， 且甘带，鸱鸦嗜鼠，四者孰知正味。 ——《齐物论》</li>
+<li><strong>不知利害</strong>：子不知利害，则至人固不知利害乎？ ——《齐物论》</li>
+<li><strong>六合之内</strong>：六合之外，圣人存而不论；六合之内，圣人论而不存。 ——《齐物论》</li>
+<li><strong>十日并出</strong>：昔者十日并出，万物皆照，而况德之进乎日者乎！ ——《齐物论》</li>
+<li><strong>彼亦一是非，此亦一是非</strong>：是亦彼也，彼亦是也。彼亦一是非，此亦一是非。 ——《齐物论》</li>
+<li><strong>方生方死</strong>：方生方死，方死方生。 ——《齐物论》</li>
+<li><strong>詹詹炎炎</strong>：大言炎炎，小言詹詹。 ——《齐物论》</li>
+<li><strong>支策据梧</strong>：昭文之鼓琴也，师旷之枝策也，惠子之据梧也，三子之知，几乎皆其盛者也，故载之末年。 ——《齐物论》</li>
+<li><strong>至矣尽矣</strong>：有以为未始有物者，至矣尽矣，不可以加矣。 ——《齐物论》</li>
+<li><strong>随者唱喁</strong>：前者唱于，而随者唱喁。 ——《齐物论》</li>
+<li><strong>秋豪之末</strong>：天下莫大于秋豪之末，而太山为小。 ——《齐物论》</li>
+<li><strong>济窍飘风</strong>：飘风则大和，厉风济则众窍为虚。 ——《齐物论》</li>
+<li><strong>庖丁解牛</strong>：庖丁为文惠君解牛，手之所触，肩之所倚，足之所履，膝之所踦 ——《养生主》</li>
+<li><strong>目无全牛</strong>：始臣之解牛之时，所见无非全牛者也。三年之后，未尝见全牛也 ——《养生主》</li>
+<li><strong>游刃有余</strong>：以无厚入有间，恢恢乎其于游刃必有余地矣 ——《养生主》</li>
+<li><strong>踌躇满志</strong>：提刀而立，为之四顾，为之踌躇满志，善刀而藏之 ——《养生主》</li>
+<li><strong>善刀而藏</strong>：提刀而立，为之四顾，为之踌躇满志，善刀而藏之。 ——《养生主》</li>
+<li><strong>批郤导窾</strong>：批大隙，导大窾。 ——《养生主》</li>
+<li><strong>新发于硎</strong>：是以十九年而刀刃若新发于硎。 ——《养生主》</li>
+<li><strong>官止神行</strong>：方今之时，臣以神遇而不以目视，官知止而神欲行。 ——《养生主》</li>
+<li><strong>动中肯綮</strong>：技经肯綮之未尝。 ——《养生主》</li>
+<li><strong>一饮一啄</strong>：泽雉十步一啄，百步一饮，不蕲畜乎樊中。 ——《养生主》</li>
+<li><strong>养生之道</strong>：吾闻庖丁之言，得养生焉。 ——《养生主》</li>
+<li><strong>薪尽火传</strong>：指穷于为薪，火传也，不知其尽也 ——《养生主》</li>
+<li><strong>安时处顺</strong>：适来，夫子时也；适去，夫子顺也。安时而处顺，哀乐不能入也 ——《养生主》</li>
+<li><strong>遁天之刑</strong>：是遁天倍情，忘其所受，古者谓之遁天之刑。 ——《养生主》</li>
+<li><strong>螳臂当车</strong>：汝不知夫螳螂乎？怒其臂以当车辙，不知其不胜任也 ——《人间世》</li>
+<li><strong>溢美之辞</strong>：两喜必多溢美之言，两怒必多溢恶之言 ——《人间世》</li>
+<li><strong>无用之用</strong>：人皆知有用之用，而莫知无用之用也 ——《人间世》</li>
+<li><strong>山木自寇</strong>：山木自寇也，膏火自煎也。 ——《人间世》</li>
+<li><strong>膏火自煎</strong>：山木自寇也，膏火自煎也。 ——《人间世》</li>
+<li><strong>以火救火，以水救水</strong>：是以火救火，以水救水，名之曰益多。 ——《人间世》</li>
+<li><strong>虚室生白</strong>：瞻彼阕者，虚室生白，吉祥止止。 ——《人间世》</li>
+<li><strong>吉祥止止</strong>：瞻彼阕者，虚室生白，吉祥止止。 ——《人间世》</li>
+<li><strong>安之若命</strong>：知其不可奈何而安之若命，德之至也。 ——《人间世》</li>
+<li><strong>画地而趋</strong>：已乎已乎，临人以德；殆乎殆乎，画地而趋。 ——《人间世》</li>
+<li><strong>饮冰内热</strong>：今吾朝受命而夕饮冰，我其内热与？ ——《人间世》</li>
+<li><strong>巧言偏辞</strong>：言者，风波也；行者，实丧也。夫风波易以动，实丧易以危。故忿设无由，巧言偏辞。 ——《人间世》</li>
+<li><strong>执而不化</strong>：将执而不化，外合而内不訾，其庸讵可乎？ ——《人间世》</li>
+<li><strong>绳墨之言</strong>：未达人心，而强以仁义绳墨之言，术暴人之前者，是以人恶有其美也。 ——《人间世》</li>
+<li><strong>知出乎争</strong>：且若亦知夫德之荡而知之所为出乎哉？德荡乎名，知出乎争。 ——《人间世》</li>
+<li><strong>来世不可待</strong>：来世不可待，往世不可追也。 ——《人间世》</li>
+<li><strong>无所依归</strong>：民其无如矣。 ——《人间世》</li>
+<li><strong>与古为徒</strong>：内直者与天为徒，外曲者与人为徒；成而上比者，与古为徒。 ——《人间世》</li>
+<li><strong>虚往实归</strong>：立不教，坐不议，虚而往，实而归 ——《德充符》</li>
+<li><strong>死生亦大矣</strong>：死生亦大矣，而不得与之变 ——《德充符》</li>
+<li><strong>肝胆楚越</strong>：自其异者视之，肝胆楚越也；自其同者视之，万物皆一也。 ——《德充符》</li>
+<li><strong>废然而反</strong>：我拂然而怒，而适先生之所，则废然而反。 ——《德充符》</li>
+<li><strong>改容更貌</strong>：子产蹴然改容更貌曰：子无乃称 ——《德充符》</li>
+<li><strong>和而不唱</strong>：和而不唱，知不出乎四域。 ——《德充符》</li>
+<li><strong>眇乎其小</strong>：眇乎小哉！所以属于人也。 ——《德充符》</li>
+<li><strong>怫然而怒</strong>：我怫然而怒。 ——《德充符》</li>
+<li><strong>相濡以沫</strong>：泉涸，鱼相与处于陆，相呴以湿，相濡以沫，不如相忘于江湖 ——《大宗师》</li>
+<li><strong>相忘江湖</strong>：泉涸，鱼相与处于陆，相呴以湿，相濡以沫，不如相忘于江湖。 ——《大宗师》</li>
+<li><strong>莫逆之交</strong>：四人相视而笑，莫逆于心，遂相与为友 ——《大宗师》</li>
+<li><strong>善始善终</strong>：善夭善老，善始善终，人犹效之 ——《大宗师》</li>
+<li><strong>鼠肝虫臂</strong>：以汝为鼠肝乎？以汝为虫臂乎 ——《大宗师》</li>
+<li><strong>悬疣附赘</strong>：彼以生为附赘县疣，以死为决疚溃痈，夫若然者，又恶知死生先后之所在！ ——《大宗师》</li>
+<li><strong>不死不生</strong>：无古今，而后能入于不死不生。 ——《大宗师》</li>
+<li><strong>方外之人</strong>：彼游方之外者也，而丘游方之内者也。 ——《大宗师》</li>
+<li><strong>天之戮民</strong>：孔子曰：‘丘，天之戮民也。’ ——《大宗师》</li>
+<li><strong>息黥补劓</strong>：庸讵知夫造物者之不息我黥而补我劓，使我乘成以随先生邪？ ——《大宗师》</li>
+<li><strong>尻舆神马</strong>：浸假而化予之尻以为轮，以神为马，予因以乘之，岂更驾哉。 ——《大宗师》</li>
+<li><strong>不知端倪</strong>：反复始终，不知端倪。 ——《大宗师》</li>
+<li><strong>虚与委蛇</strong>：吾与之虚而委蛇，不知其谁何 ——《应帝王》</li>
+<li><strong>使蚊负山</strong>：其于治天下也，犹涉海凿河，而使蚊负山也 ——《应帝王》</li>
+<li><strong>涉海凿河</strong>：其于治天下也，犹涉海凿河，而使蚊负山也 ——《应帝王》</li>
+<li><strong>浑沌凿窍</strong>：日凿一窍，七日而浑沌死 ——《应帝王》</li>
+</ul>
+<h2 id="外篇"><a class="header" href="#外篇">外篇</a></h2>
+<ul>
+<li><strong>骈拇枝指</strong>：骈拇枝指，出乎性哉，而侈于德 ——《骈拇》</li>
+<li><strong>断鹤续凫</strong>：凫胫虽短，续之则忧；鹤胫虽长，断之则悲 ——《骈拇》</li>
+<li><strong>蒿目时艰</strong>：今世之仁人，蒿目而忧世之患。 ——《骈拇》</li>
+<li><strong>挟筴读书</strong>：问臧奚事？则挟筴读书；问谷奚事？则博塞以游。 ——《骈拇》</li>
+<li><strong>累瓦结绳</strong>：骈于辩者，累瓦结绳，窜句游心于坚白同异之间，而敝跬誉无用之言词非乎？而杨墨是已。 ——《骈拇》</li>
+<li><strong>不及之法</strong>：使天下簧鼓，以奉不及之法，非乎？ ——《骈拇》</li>
+<li><strong>含哺鼓腹</strong>：含哺而熙，鼓腹而游 ——《马蹄》</li>
+<li><strong>诡衔窃辔</strong>：夫加之以衡扼，齐之以月题，而马知介倪、闉扼、鸷曼，诡衔窃辔。 ——《马蹄》</li>
+<li><strong>胠箧探囊</strong>：将为胠箧探囊发匮之盗而为守备 ——《胠箧》</li>
+<li><strong>盗亦有道</strong>：跖之徒问于跖曰：盗亦有道乎？跖曰：何适而无有道邪 ——《胠箧》</li>
+<li><strong>窃钩者诛，窃国者侯</strong>：彼窃钩者诛，窃国者为诸侯，诸侯之门而仁义存焉 ——《胠箧》</li>
+<li><strong>唇亡齿寒</strong>：唇竭则齿寒，鲁酒薄而邯郸围 ——《胠箧》</li>
+<li><strong>延颈举踵</strong>：延颈举踵，曰：某所有贤者 ——《胠箧》</li>
+<li><strong>绝圣弃知</strong>：故绝圣弃知，大盗乃止，擿玉毁珠，小盗不起。 ——《胠箧》</li>
+<li><strong>掊斗折衡</strong>：掊斗折衡，而民不争。 ——《胠箧》</li>
+<li><strong>尸居龙见</strong>：尸居而龙见，渊默而雷声 ——《在宥》</li>
+<li><strong>独往独来</strong>：出入六合，游乎九州，独往独来，是谓独有。 ——《在宥》</li>
+<li><strong>拊髀雀跃</strong>：鸿蒙方将抚髀雀跃而游。 ——《在宥》</li>
+<li><strong>欢呼雀跃</strong>：鸿蒙方将拊髀雀跃而游。 ——《在宥》</li>
+<li><strong>膝行而进</strong>：黄帝顺下风，膝行而进，再拜稽首而问曰。 ——《在宥》</li>
+<li><strong>窈窈冥冥</strong>：至道之精，窈窈冥冥；至道之极，昏昏默默。 ——《在宥》</li>
+<li><strong>昏昏默默</strong>：至道之精，窈窈冥冥；至道之极，昏昏默默。 ——《在宥》</li>
+<li><strong>机心</strong>：有机械者必有机事，有机事者必有机心。机心存于胸中，则纯白不备 ——《天地》</li>
+<li><strong>鹑居鷇食</strong>：鹑居而鷇食，鸟行而无彰 ——《天地》</li>
+<li><strong>抱瓮灌园</strong>：凿隧而入井，抱瓮而出灌 ——《天地》</li>
+<li><strong>知一万毕</strong>：通于一而万事毕。 ——《天地》</li>
+<li><strong>只知其一，不知其二</strong>：识其一，不知其二，治其内，而不治其外。 ——《天地》</li>
+<li><strong>洋洋大观</strong>：夫道，覆载万物者也，洋洋乎大哉！ ——《天地》</li>
+<li><strong>青黄沟木</strong>：百年之木，破为牺尊，青黄而文之，其断在沟中。比犠尊于沟中之断，则美恶有间矣，其于失性一也。 ——《天地》</li>
+<li><strong>交臂历指</strong>：则是罪人交臂历指，而虎豹在于囊槛，亦可以为得矣。 ——《天地》</li>
+<li><strong>怫然作色</strong>：谓己谀人，则怫然作色。 ——《天地》</li>
+<li><strong>勃然作色</strong>：谓己道人，则勃然作色。 ——《天地》</li>
+<li><strong>二缶钟惑</strong>：以二缶锺惑，而所适不得矣。 ——《天地》</li>
+<li><strong>独弦哀歌</strong>：子非夫博学以拟圣，於于以盖众，独弦哀歌，以卖名声于天下者乎？ ——《天地》</li>
+<li><strong>大惑不解</strong>：大惑者，终身不解；大愚者，终身不灵。 ——《天地》</li>
+<li><strong>大愚不灵</strong>：大惑者终身不解，大愚者终身不灵。 ——《天地》</li>
+<li><strong>辞不获命</strong>：鲁君谓葂也曰：‘请受教。’辞不获命，既已告矣，未知中否。 ——《天地》</li>
+<li><strong>标枝野鹿</strong>：至治之世，不尚贤，不使能，上如标枝，民如野鹿。 ——《天地》</li>
+<li><strong>爱人利物</strong>：爱人利物之谓仁。 ——《天地》</li>
+<li><strong>无思无虑</strong>：德人者，居无思，行无虑，不藏是非美恶。 ——《天地》</li>
+<li><strong>行言自为</strong>：行言自为而天下化，手挠顾指，四方之民莫不俱至，此之谓圣治。 ——《天地》</li>
+<li><strong>得心应手</strong>：不徐不疾，得之于手而应于心，口不能言 ——《天道》</li>
+<li><strong>只可意会，不可言传</strong>：意之所随者，不可以言传也 ——《天道》</li>
+<li><strong>轮扁斫轮</strong>：是以行年七十而老斫轮。 ——《天道》</li>
+<li><strong>六通四辟</strong>：明于天，通于圣，六通四辟于帝王之德者，其自为也，昧然无不静者矣。 ——《天道》</li>
+<li><strong>兼爱无私</strong>：中心物恺，兼爱无私，此仁义之情也。 ——《天道》</li>
+<li><strong>呼牛呼马</strong>：昔者子呼我牛也，而谓之牛；呼我马也，而谓之马。 ——《天道》</li>
+<li><strong>大本大宗</strong>：夫明白于天地之德者，此之谓大本大宗，与天和者也。 ——《天道》</li>
+<li><strong>不徐不疾</strong>：不徐不疾，得之于手，而应于心。 ——《天道》</li>
+<li><strong>百舍重趼</strong>：吾闻夫子圣人也。吾固不辞远道而来愿见，百舍重趼而不敢息。 ——《天道》</li>
+<li><strong>东施效颦</strong>：故西施病心而矉其里，其里之丑人见之而美之，归亦捧心而矉其里 ——《天运》</li>
+<li><strong>劳而无功</strong>：是犹推舟于陆也，劳而无功 ——《天运》</li>
+<li><strong>推舟于陆</strong>：今蕲行周于鲁，是犹推舟于陆也！劳而无功，身必有殃。 ——《天运》</li>
+<li><strong>至仁无亲</strong>：请问至仁？庄子曰：‘至仁无亲。’ ——《天运》</li>
+<li><strong>在谷满谷</strong>：在谷满仓，在坑满坑。 ——《天运》</li>
+<li><strong>鲜规之兽</strong>：鲜规之兽，莫得安其性命有情者。 ——《天运》</li>
+<li><strong>不主故常</strong>：其声能短能长，能柔能刚，变化齐一，不主故常。 ——《天运》</li>
+<li><strong>播糠眯目</strong>：夫播糠眯目，则天地四方易位矣。 ——《天运》</li>
+<li><strong>三皇五帝</strong>：故夫三皇五帝之礼法度，不矜于同而预于治。 ——《天运》</li>
+<li><strong>行流散徙</strong>：行流散徙，不主常声。 ——《天运》</li>
+<li><strong>吐故纳新</strong>：吹呴呼吸，吐故纳新，熊经鸟申 ——《刻意》</li>
+<li><strong>熊经鸟申</strong>：吹呴呼吸，吐故纳新，熊经鸟申 ——《刻意》</li>
+<li><strong>虚无恬淡</strong>：虚无恬淡，乃合天德。 ——《刻意》</li>
+<li><strong>蟠天际地</strong>：上际于天，下蟠于地。 ——《刻意》</li>
+<li><strong>离世异俗</strong>：刻意尚行，离世异俗，高论怨诽，为亢而已矣，此山谷之士，非世之人，枯槁赴渊者之所好也。 ——《刻意》</li>
+<li><strong>浮生若梦</strong>：其生若浮，其死若休。 ——《刻意》</li>
+<li><strong>避世绝俗</strong>：此江海之士，避世之人，闲暇者之所好也。 ——《刻意》</li>
+<li><strong>江海之士</strong>：此江海之士，避世之人，闲暇者之所好也。 ——《刻意》</li>
+<li><strong>傥来之物</strong>：物之傥来，寄者也。寄之，其来不可圉，其去不可止 ——《缮性》</li>
+<li><strong>深根宁极</strong>：不当时命而大穷乎天下，则深根宁极而待；此存身之道也。 ——《缮性》</li>
+<li><strong>溺心灭质</strong>：文灭质，博溺心。 ——《缮性》</li>
+<li><strong>望洋兴叹</strong>：于是焉河伯始旋其面目，望洋向若而叹 ——《秋水》</li>
+<li><strong>贻笑大方</strong>：吾长见笑于大方之家 ——《秋水》</li>
+<li><strong>大方之家</strong>：今我睹子之难穷也，吾非至于子之门则殆矣，吾长见笑于大方之家。 ——《秋水》</li>
+<li><strong>井底之蛙</strong>：井蛙不可以语于海者，拘于虚也 ——《秋水》</li>
+<li><strong>夏虫不可语冰</strong>：夏虫不可以语于冰者，笃于时也 ——《秋水》</li>
+<li><strong>邯郸学步</strong>：寿陵馀子之学行于邯郸与？未得国能，又失其故行矣 ——《秋水》</li>
+<li><strong>一日千里</strong>：骐骥、骅骝，一日而驰千里 ——《秋水》</li>
+<li><strong>曳尾涂中</strong>：吾将曳尾于塗中 ——《秋水》</li>
+<li><strong>太仓稊米</strong>：计中国之在海内，不似稊米之在太仓乎？ ——《秋水》</li>
+<li><strong>百川归海</strong>：天下之水，莫大于海，万川归之 ——《秋水》</li>
+<li><strong>以管窥天</strong>：是直用管窥天，用锥指地也 ——《秋水》</li>
+<li><strong>以锥刺地</strong>：是直用管窥天，用锥指地也，不亦小乎！ ——《秋水》</li>
+<li><strong>知鱼之乐</strong>：庄子与惠子游于濠梁之上。庄子曰：鯈鱼出游从容，是鱼之乐也。惠子曰：子非鱼，安知鱼之乐？庄子曰：子非我，安知我不知鱼之乐 ——《秋水》</li>
+<li><strong>濠梁观鱼</strong>：庄子与惠子游于濠梁之上。庄子曰：鯈鱼出游从容，是鱼之乐也 ——《秋水》</li>
+<li><strong>欣然自喜</strong>：秋水时至，百川灌河，泾流之大，两涘渚崖之间，不辨牛马，于是焉河伯欣然自喜，以天下之美为尽在已。 ——《秋水》</li>
+<li><strong>视死若生</strong>：白刃交于前，视死若生者，烈士之勇也。 ——《秋水》</li>
+<li><strong>喷唾成珠</strong>：子不见夫唾者乎？喷则大者如珠，小者如雾。 ——《秋水》</li>
+<li><strong>众口之辩</strong>：公孙龙问于魏牟曰：‘龙少学先王之道，长而明仁义之行，合同异，杂坚白，然不然，可不可，因百家之知，穷众口之辩，吾自以为至达已。’ ——《秋水》</li>
+<li><strong>非愚则诬</strong>：盖师是而无非，师治而无乱呼？是未明天地之理，万物之情者也。是犹师天而无地，师阴而无阳，其不可行明矣。然且语而不舍，非愚则诬也。 ——《秋水》</li>
+<li><strong>大难临头</strong>：临大难而不惧者，圣人之勇也。 ——《秋水》</li>
+<li><strong>餐腥啄腐</strong>：夫鹓雏，发于南海而飞于北海，非梧桐不止，非练实不食，非醴泉不饮。于是鸱得腐鼠，鹓雏过之，仰而视之曰：‘吓！’今子欲以子之梁国而吓我邪？ ——《秋水》</li>
+<li><strong>夏虫朝菌</strong>：夏虫不可以语于冰。 ——《秋水》</li>
+<li><strong>鼓盆而歌</strong>：庄子妻死，惠子吊之，庄子则方箕踞鼓盆而歌 ——《至乐》</li>
+<li><strong>绠短汲深</strong>：褚小者不可以怀大，绠短者不可以汲深。 ——《至乐》</li>
+<li><strong>褚小怀大</strong>：褚小者不可以怀大，绠短者不可以汲深。 ——《至乐》</li>
+<li><strong>斧钺之诛</strong>：庄子之楚，见空髑髅髐然有形，撽以马捶，因而问之曰：‘夫子贪生失理而为此乎？将子有亡国之事、斧钺之诛而此乎？’ ——《至乐》</li>
+<li><strong>呆若木鸡</strong>：望之似木鸡矣，其德全矣。异鸡无敢应，见者反走矣 ——《达生》</li>
+<li><strong>虚骄恃气</strong>：纪渻子为王养斗鸡，十日而问鸡已乎。曰：‘未也，方虚骄而恃气。’ ——《达生》</li>
+<li><strong>昭然若揭</strong>：今汝饰知以惊愚，修身以明污，昭昭乎若揭日月而行也 ——《达生》</li>
+<li><strong>视为畏途</strong>：夫畏涂者，十杀一人，则父子兄弟相戒也。 ——《达生》</li>
+<li><strong>款启寡闻</strong>：今休，款启寡闻之民也。 ——《达生》</li>
+<li><strong>飘瓦虚舟</strong>：虽有忮心者不怨飘瓦。 ——《达生》</li>
+<li><strong>进退中绳</strong>：车野稷以御见庄公，进退中绳，左右旋中规，庄公以为文弗过也，使之钩百而反。 ——《达生》</li>
+<li><strong>冁然而笑</strong>：于是桓公冁然而笑 ——《达生》</li>
+<li><strong>不上不下</strong>：上而不下，则使人善怒；下而不上，则使人善忘；不上不下，中身当心，则为病。 ——《达生》</li>
+<li><strong>螳螂捕蝉，黄雀在后</strong>：睹一蝉，方得美荫而忘其身；螳螂执翳而搏之 ——《山木》</li>
+<li><strong>君子之交淡如水</strong>：君子之交淡若水，小人之交甘若醴 ——《山木》</li>
+<li><strong>直木先伐</strong>：直木先伐，甘井先竭 ——《山木》</li>
+<li><strong>甘井先竭</strong>：直木先伐，甘井先竭。 ——《山木》</li>
+<li><strong>虚船触舟</strong>：方舟而济于河，有虚船来触舟，虽有偏心之人不怒。 ——《山木》</li>
+<li><strong>迎来送往</strong>：其送往而迎来，来者勿禁，往者勿止。 ——《山木》</li>
+<li><strong>随乡入乡</strong>：入其俗，从其令。 ——《山木》</li>
+<li><strong>少私寡欲</strong>：南越有邑焉，名为建德之国，其民愚而朴，少私而寡欲。 ——《山木》</li>
+<li><strong>无毁无誉</strong>：无誉无訾，一龙一蛇，与时俱化，而无肯专为。 ——《山木》</li>
+<li><strong>雁默先烹</strong>：夫子出于山，舍于故人之家。故人喜，命竖子杀雁而烹之。竖子请曰：‘其一能鸣，其一不能鸣，请奚杀？’主人曰：‘杀不能鸣者。’ ——《山木》</li>
+<li><strong>木雁之间</strong>：昨日山中之木不材得终其天年，今主人之雁以不材死，先生将何处？ ——《山木》</li>
+<li><strong>终其天年</strong>：此木以不材得终其天年。 ——《山木》</li>
+<li><strong>自崖而反</strong>：君其涉于江而浮于，望之而不见其崖，愈往而不知其所穷，送君者皆自崖而反，君自此远矣 ——《山木》</li>
+<li><strong>目大不睹</strong>：此何鸟哉？翼殷不逝，目大不睹，蹇裳躩步，执弹而留之。 ——《山木》</li>
+<li><strong>饰智矜愚</strong>：饰知以惊愚，修身以明污 ——《山木》</li>
+<li><strong>亦步亦趋</strong>：夫子步亦步，夫子趋亦趋，夫子驰亦驰 ——《田子方》</li>
+<li><strong>失之交臂</strong>：吾终身与汝交一臂而失之，可不哀与 ——《田子方》</li>
+<li><strong>哀莫大于心死</strong>：夫哀莫大于心死，而人死亦次之 ——《田子方》</li>
+<li><strong>目击道存</strong>：若夫人者，目击而道存矣 ——《田子方》</li>
+<li><strong>解衣般礴</strong>：公使人视之，则解衣槃礴臝。君曰：可矣，是真画者也 ——《田子方》</li>
+<li><strong>奔逸绝尘</strong>：夫子奔逸绝尘，而回瞠若乎后矣 ——《田子方》</li>
+<li><strong>瞠乎其后</strong>：夫子奔逸绝尘，而回瞠若乎后矣！ ——《田子方》</li>
+<li><strong>瓮里醯鸡</strong>：丘之于道也，其犹醯鸡与！ ——《田子方》</li>
+<li><strong>朝令夜遁</strong>：臧丈人昧然而不应，泛然而辞，朝令而夜遁，终身无闻。 ——《田子方》</li>
+<li><strong>一晦一明</strong>：消息满虚，一晦一明，日改月化。 ——《田子方》</li>
+<li><strong>求马唐肆</strong>：彼已尽矣，而女求之以为有，是求马于唐肆也。 ——《田子方》</li>
+<li><strong>钳口不言</strong>：吾形解而不欲动，口钳而不欲言，吾所学者，直土梗耳！ ——《田子方》</li>
+<li><strong>德配天地</strong>：夫子德配天地，而犹假至言以修心。 ——《田子方》</li>
+<li><strong>不言而信</strong>：夫子不言而信，不比而周。 ——《田子方》</li>
+<li><strong>汗流至踵</strong>：御寇伏地，汗流至踵。 ——《田子方》</li>
+<li><strong>挥斥八极</strong>：夫至人者，上窥青天，下潜黄泉，挥斥八极，神气不变。 ——《田子方》</li>
+<li><strong>千变万化</strong>：独有一丈夫，儒服而立乎公门。公即召而问以国事，千变万化而不穷。 ——《田子方》</li>
+<li><strong>化腐朽为神奇</strong>：臭腐复化为神奇，神奇复化为臭腐 ——《知北游》</li>
+<li><strong>白驹过隙</strong>：人生天地之间，若白驹之过郤，忽然而已 ——《知北游》</li>
+<li><strong>每况愈下</strong>：正获之问于监市履豨也，每下愈况 ——《知北游》</li>
+<li><strong>道在屎溺</strong>：东郭子问于庄子曰：所谓道，恶乎在？庄子曰：无所不在。……曰：在屎溺 ——《知北游》</li>
+<li><strong>至言去言</strong>：至言去言，至为去为，齐知之所知，则浅矣。 ——《知北游》</li>
+<li><strong>异名同实</strong>：异名同实，其指一也。 ——《知北游》</li>
+<li><strong>行不知往</strong>：故行不知往，处不知所持，食不知所味，天地之强阳气也，又胡可得而有邪！ ——《知北游》</li>
+<li><strong>损之又损</strong>：故曰为道者日损，损之又损之，以至于无为。 ——《知北游》</li>
+<li><strong>视而不见，听而不闻</strong>：终日视之而不见，听之而不闻，搏之而不得也。 ——《知北游》</li>
+<li><strong>初生之犊</strong>：德将为汝美，道将为汝居，汝瞳焉如新生之犊而无求其故！ ——《知北游》</li>
+</ul>
+<h2 id="杂篇"><a class="header" href="#杂篇">杂篇</a></h2>
+<ul>
+<li><strong>数米而炊</strong>：简发而栉，数米而炊 ——《庚桑楚》</li>
+<li><strong>吞舟之鱼</strong>：吞舟之鱼，砀而失水，则蚁能苦之 ——《庚桑楚》</li>
+<li><strong>至信辟金</strong>：至仁无亲，至信辟金。 ——《庚桑楚》</li>
+<li><strong>至知不谋</strong>：故曰，至礼有不人，至义不物，至知不谋，至仁无亲，至信辟全。 ——《庚桑楚》</li>
+<li><strong>天下为笼</strong>：以天下为之笼，则雀无所逃。是故汤以胞人笼伊尹，秦穆公以五羊之皮笼百里奚。是故非以其所好笼之而可得者，无有也。 ——《庚桑楚》</li>
+<li><strong>人人得而诛之</strong>：为不善乎显明之中者，人得而诛之。 ——《庚桑楚》</li>
+<li><strong>眉睫之间</strong>：向吾见若眉睫之间，吾因以得汝矣。 ——《庚桑楚》</li>
+<li><strong>冰解冻释</strong>：是乃所谓冰释冻释者能乎？ ——《庚桑楚》</li>
+<li><strong>鸡伏鹄卵</strong>：奔蜂不能化藿蠋，越鸡不能伏鹄卵。 ——《庚桑楚》</li>
+<li><strong>运斤成风</strong>：郢人垩漫其鼻端，若蝇翼，使匠石斫之。匠石运斤成风，听而斫之，尽垩而鼻不伤，郢人立不失容 ——《徐无鬼》</li>
+<li><strong>空谷足音</strong>：闻人足音跫然而喜矣 ——《徐无鬼》</li>
+<li><strong>鼪鼬之径</strong>：夫逃虚空者，藜藿柱乎鼪鼬之径，踉位其空，闻人足音蛩然而喜矣。 ——《徐无鬼》</li>
+<li><strong>超轶绝尘</strong>：天下马有成材，若恤若失，若丧其一，若是者，超轶绝尘，不知其所。 ——《徐无鬼》</li>
+<li><strong>安室利处</strong>：奎蹄曲隈，乳间股脚，自以为安室利处。 ——《徐无鬼》</li>
+<li><strong>如蚁附膻</strong>：蚁慕羊肉，羊肉膻也。 ——《徐无鬼》</li>
+<li><strong>三徙成都</strong>：舜有膻行，百姓悦之，故三徙成都，至邓之虚，而有十万家。 ——《徐无鬼》</li>
+<li><strong>枯槁之士</strong>：招士之士兴朝，中民之士荣官，筋力之士矜雅，勇敢之士奋患，兵革之士乐战，枯槁之士宿名。 ——《徐无鬼》</li>
+<li><strong>喙长三尺</strong>：丘愿有喙三尺。 ——《徐无鬼》</li>
+<li><strong>猴子搏矢</strong>：王射之，敏给搏捷矢。王命相者趋射，狙执死。 ——《徐无鬼》</li>
+<li><strong>蛮触之争</strong>：有国于蜗之左角者，曰触氏；有国于蜗之右角者，曰蛮氏 ——《则阳》</li>
+<li><strong>蜗角蝇头</strong>：有国于蜗之左角者，曰触氏，有国于蜗之右角者，曰蛮氏，时相与争地而战，伏尸数万，逐北，旬有五日而后反。 ——《则阳》</li>
+<li><strong>鲁莽灭裂</strong>：昔予为禾，耕而卤莽之，则其实亦卤莽而报予；芸而灭裂之 ——《则阳》</li>
+<li><strong>安危相易，祸福相生</strong>：安危相易，祸福相生。 ——《则阳》</li>
+<li><strong>剑头一吷</strong>：夫吹管也，犹有嗃也；吹剑首者，吷而已矣。尧舜，人之所誉也；道尧舜于戴晋人之前，譬犹一吷也。 ——《则阳》</li>
+<li><strong>陆沉</strong>：是陆沉者也，是其市南宜僚邪 ——《则阳》</li>
+<li><strong>得鱼忘筌</strong>：荃者所以在鱼，得鱼而忘荃 ——《外物》</li>
+<li><strong>得兔忘蹄</strong>：蹄者所以在兔，得兔而忘蹄。 ——《外物》</li>
+<li><strong>得意忘筌</strong>：筌者所以在鱼；得鱼而忘筌；蹄者所以在兔；得兔而忘蹄；言者所以在意；得意而忘言。 ——《外物》</li>
+<li><strong>得意忘言</strong>：言者所以在意，得意而忘言 ——《外物》</li>
+<li><strong>涸辙之鲋</strong>：周顾视车辙中，有鲋鱼焉 ——《外物》</li>
+<li><strong>苌弘化碧</strong>：苌弘死于蜀，藏其血，三年而化为碧。 ——《外物》</li>
+<li><strong>诗礼发冢</strong>：儒以诗礼发冢。 ——《外物》</li>
+<li><strong>尊古卑今</strong>：夫尊古而卑今，学者之流也。 ——《外物》</li>
+<li><strong>终身之丑</strong>：老菜子曰：‘夫不忍一世之伤，而骛万世之患，抑固瘘耶。忘其略有弗反耶。惠以欢为骛，终身之丑，中民之行进焉。’ ——《外物》</li>
+<li><strong>老龟刳肠</strong>：神龟能见梦于元君，而不能避余且之网，知能七十二钻而无遗筴，不能避刳肠之患。 ——《外物》</li>
+<li><strong>妇姑勃谿</strong>：室无空虚，则妇姑勃溪。 ——《外物》</li>
+<li><strong>惮赫千里</strong>：白波若山，海水震荡，声侔鬼神，惮赫千里。 ——《外物》</li>
+<li><strong>寓言十九</strong>：寓言十九，重言十七。 ——《寓言》</li>
+<li><strong>心服口服</strong>：利义陈乎前，而好恶是非直服人之口而已矣。使人乃以心服，而不敢蘁立，定天下之定。 ——《寓言》</li>
+<li><strong>捉襟见肘</strong>：正冠而缨绝，捉衿而肘见，纳屦而踵决 ——《让王》</li>
+<li><strong>以珠弹雀</strong>：以随侯之珠，弹千仞之雀，世必笑之 ——《让王》</li>
+<li><strong>日出而作，日入而息</strong>：日出而作，日入而息，逍遥于天地之间而心意自得 ——《让王》</li>
+<li><strong>逍遥自得</strong>：日出而作，日入而息，逍遥于天地之间，而心意自得。 ——《让王》</li>
+<li><strong>身在江海，心居魏阙</strong>：身在江海之上，心居乎魏阙之下。 ——《让王》</li>
+<li><strong>上漏下湿</strong>：上漏下湿，匡坐而弦。 ——《让王》</li>
+<li><strong>桑枢瓮牖</strong>：蓬户不完，桑以为枢；而瓮牖二室，褐以为塞 ——《让王》</li>
+<li><strong>畎亩之中</strong>：后之为人也，居于畎亩之中，而游尧之门。 ——《让王》</li>
+<li><strong>高官尊爵</strong>：今世之人居高官尊爵者，皆重失之。 ——《让王》</li>
+<li><strong>以利累形</strong>：虽贵富，不以养伤身；虽贫贱，不以利累形。 ——《让王》</li>
+<li><strong>以养伤身</strong>：夫人王亶父，可谓能尊生矣。能尊生者，虽贵富，不以养伤身；虽贫贱，不以利累形。今世之人，居高官尊爵者，皆重失之。见利轻亡其身，岂不惑哉！ ——《让王》</li>
+<li><strong>摇唇鼓舌</strong>：不耕而食，不织而衣，摇唇鼓舌，擅生是非 ——《盗跖》</li>
+<li><strong>无立锥之地</strong>：子孙无置锥之地 ——《盗跖》</li>
+<li><strong>以强凌弱，以众暴寡</strong>：以强陵弱，以众暴寡 ——《盗跖》</li>
+<li><strong>尾生抱柱</strong>：尾生与女子期于梁下，女子不来，水至不去，抱梁柱而死 ——《盗跖》</li>
+<li><strong>顺我者昌，逆我者亡</strong>：顺吾意则生，逆吾心则死 ——《盗跖》</li>
+<li><strong>作言造语</strong>：尔作言造语，妄称文武，冠技术之冠，带死牛之胁，多辞缪说，不耕而食，不织而衣，摇唇鼓舌，擅生是非。 ——《盗跖》</li>
+<li><strong>案剑瞋目</strong>：案剑瞋目，声如乳虎。 ——《盗跖》</li>
+<li><strong>知生之民</strong>：古者民不知衣服，夏多积薪，冬则炀之，故命之曰知生之民。 ——《盗跖》</li>
+<li><strong>止暴禁非</strong>：使子路去其危冠，解其长剑，而受教于子。天下皆曰：‘孔丘能止暴禁非。’ ——《盗跖》</li>
+<li><strong>枝木之冠</strong>：冠枝木之冠，带死牛之胁。 ——《盗跖》</li>
+<li><strong>南面称孤</strong>：凡人有此一德者，足以南面称孤矣。 ——《盗跖》</li>
+<li><strong>缝衣浅带</strong>：今子修文武之道，掌天下之辩，以教后世，缝衣浅带，矫言伪行，以迷惑天下之主。 ——《盗跖》</li>
+<li><strong>负石赴河</strong>：申徒狄谏而不听，负石自投于河，为鱼鳖所食。 ——《盗跖》</li>
+<li><strong>唇如激丹</strong>：今将军兼此三者，身长八尺二寸，面目有光，唇如激丹，齿如齐贝，音中黄钟，而名曰盗跖。 ——《盗跖》</li>
+<li><strong>齿如齐贝</strong>：唇如激丹，齿如含贝。 ——《盗跖》</li>
+<li><strong>色若死灰</strong>：孔子再拜趋走，出门上车，执辔三失，目茫然无见，色若死灰。 ——《盗跖》</li>
+<li><strong>发上指冠</strong>：盗跖闻之，目如明星，发上指冠。 ——《盗跖》</li>
+<li><strong>无病自灸</strong>：丘所谓无病而自灸也 ——《盗跖》</li>
+<li><strong>芒然自失</strong>：此天子之剑也。文王芒然自失。 ——《说剑》</li>
+<li><strong>分庭抗礼</strong>：见夫子未尝不分庭伉礼 ——《渔父》</li>
+<li><strong>须眉交白</strong>：有渔父者，下船而来，须眉交白。 ——《渔父》</li>
+<li><strong>析交离亲</strong>：析交离亲谓之贼。 ——《渔父》</li>
+<li><strong>畏影避迹</strong>：人有畏影恶迹而去之走者，举足愈数而迹愈多，走愈疾而影不离身。 ——《渔父》</li>
+<li><strong>处静息迹</strong>：不知处阴以休影，处静以息迹，愚亦甚矣。 ——《渔父》</li>
+<li><strong>同类相从</strong>：同类相从，同声相应，固天之理也。 ——《渔父》</li>
+<li><strong>精诚所至，金石为开</strong>：真者，精诚之至也，不精不诚，不能动人。 ——《渔父》</li>
+<li><strong>屠龙之技</strong>：朱泙漫学屠龙于支离益，单千金之家，三年技成而无所用其巧 ——《列御寇》</li>
+<li><strong>探骊得珠</strong>：夫千金之珠，必在九重之渊而骊龙颔下 ——《列御寇》</li>
+<li><strong>能者多劳</strong>：巧者劳而知者忧，无能者无所求 ——《列御寇》</li>
+<li><strong>厚貌深情</strong>：凡人心险于山川，难于知天。天犹有春秋冬夏旦暮之期，人者厚貌深情 ——《列御寇》</li>
+<li><strong>吮痈舐痔</strong>：秦王有病召医，破痈溃痤者得车一乘，舐痔者得车五乘 ——《列御寇》</li>
+<li><strong>舐痔得车</strong>：秦王有病召医，破痈溃痤者得车一乘，舐痔者得车五乘，所治愈下，得车愈多 ——《列御寇》</li>
+<li><strong>槁项黄馘</strong>：夫处穷闾阨巷，困窘织屦，槁项黄馘者，商之所短也。 ——《列御寇》</li>
+<li><strong>被绣之牺</strong>：或聘于庄子。庄子应其使曰：‘子见夫牺牛乎？衣以文绣，食以刍叔，及其牵而入于大庙，虽欲为孤犊，其可得乎！’ ——《列御寇》</li>
+<li><strong>苞苴竿牍</strong>：小夫之知，不离苞苴竿牍。 ——《列御寇》</li>
+<li><strong>千金之家</strong>：朱泙漫学屠龙于支离益，单千金之家，三年技成而无所用其巧。 ——《列御寇》</li>
+<li><strong>勇动多怨</strong>：智慧外通，勇动多怨，仁义多贵。 ——《列御寇》</li>
+<li><strong>知而不言</strong>：知道易，勿言难。知而不言，所以之天也。 ——《列御寇》</li>
+<li><strong>以天地为棺椁</strong>：吾以天地为棺椁，以日月为连璧，星辰为珠玑，万物为赍送 ——《列御寇》</li>
+<li><strong>学富五车</strong>：惠施多方，其书五车 ——《天下》</li>
+<li><strong>栉风沐雨</strong>：沐甚雨，栉疾风 ——《天下》</li>
+<li><strong>变化无常</strong>：芴漠无形，变化无常 ——《天下》</li>
+<li><strong>大同小异</strong>：大同而与小同异，此之谓小同异；万物毕同毕异 ——《天下》</li>
+<li><strong>内圣外王</strong>：是故内圣外王之道，暗而不明，郁而不发 ——《天下》</li>
+<li><strong>至大无外</strong>：至大无外，谓之大一；至小无内，谓之小一。 ——《天下》</li>
+<li><strong>至小无内</strong>：至大无外，谓之大一；至小无内，谓之小一。 ——《天下》</li>
+<li><strong>知白守辱</strong>：知其白，守其辱，为天下谷。 ——《天下》</li>
+<li><strong>强聒不舍</strong>：上说下教，虽天下不取，强聒而不舍者也。 ——《天下》</li>
+<li><strong>其应若响</strong>：其动若水，其静若镜，其应若响。 ——《天下》</li>
+<li><strong>谬悠之说</strong>：以谬悠之说，荒唐之言，无端崖之辞，时恣纵两不傥。 ——《天下》</li>
+<li><strong>荒唐之言</strong>：庄周闻其风而悦之，以谬悠之说，荒唐之言，无端崖之辞时恣纵而不戃。 ——《天下》</li>
+<li><strong>搢绅先生</strong>：其在于诗书礼乐者，邹鲁之士，搢绅先生多能明之。 ——《天下》</li>
+<li><strong>椎拍輐断</strong>：椎拍輐断，与物宛转。 ——《天下》</li>
+<li><strong>逐物不还</strong>：惜乎惠施之才，骀荡而不得，逐万物而不反。 ——《天下》</li>
+<li><strong>焚符破玺</strong>：故绝圣弃知，大盗乃止；擿玉毁珠，小盗不起；焚符破玺，而民朴鄙；掊斗折衡，而民不争 ——《胠箧》</li>
+<li><strong>华封三祝</strong>：尧观乎华。华封人曰：嘻，圣人！请祝圣人寿…圣人富…圣人多男子。 ——《天地》</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../Dao/ZhuangZi/YuYan.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../Dao/LieZi/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../Dao/ZhuangZi/YuYan.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../../Dao/LieZi/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+
+        <script src="../../clipboard-1626706a.min.js"></script>
+        <script src="../../highlight-abc7f01d.js"></script>
+        <script src="../../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
