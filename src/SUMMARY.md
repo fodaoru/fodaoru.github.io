@@ -28,6 +28,7 @@
     * [清静道论](Buddhism/Lun/QingJingDao.md)
     * [大智度论](Buddhism/Lun/DaZhiDu.md)
     * [瑜伽师地论](Buddhism/Lun/YuQieShiDi.md)
+    * [唯识三十颂](Buddhism/Lun/WeiShi30Song.md)
     * [入菩萨行论](Buddhism/Lun/RuPuShaXing.md)
     * [大乘起信论](Buddhism/Lun/DaChengQiXin.md)
     * [阿毗达磨俱舍论](Buddhism/Lun/JuShe.md)
