@@ -67,3 +67,5 @@
   * [孟子](Ru/MengZi.md)
   * [传习录](Ru/ChuanXiLu.md)
 * [三合一](Merge/README.md)
+* [觀想](GuanXiang/README.md)
+  * [緣起 · 一桌](GuanXiang/yuanqi/README.md)

@@ -22,3 +22,47 @@ u {
 .note-text {
     font-size: 16px;
 }
+
+
+/* 緣起 · 一桌：內嵌動畫 */
+.yuanqi-embed {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 220px);
+    min-height: 520px;
+    margin: 1.2rem 0 0.6rem;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #070605;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.yuanqi-embed iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #070605;
+}
+
+.yuanqi-actions {
+    font-size: 1rem;
+    text-align: right;
+    margin-top: 0.4rem;
+}
+
+.yuanqi-actions a {
+    color: #9a7b4f;
+    text-decoration: none;
+}
+
+.yuanqi-actions a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+    .yuanqi-embed {
+        height: calc(100vh - 260px);
+        min-height: 420px;
+    }
+}
