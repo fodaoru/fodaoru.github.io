@@ -21,6 +21,7 @@
   * [观无量寿经](Buddhism/GuanWuLiangShou.md)
   * [其它佛经](Buddhism/Other/README.md)
     * [转法轮经](Buddhism/Other/ZhuanFaLun.md)
+    * [法句经](Buddhism/Other/FaJu.md)
   * [论](Buddhism/Lun/README.md)
     * [证道歌](Buddhism/Lun/ZhengDaoGe.md)
     * [达摩破相论](Buddhism/Lun/DaMoPoXiang.md)
